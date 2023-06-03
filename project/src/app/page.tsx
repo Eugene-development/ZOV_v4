@@ -23,7 +23,7 @@ export const metadata = {
 //    };
 // }
 
-export default async function Home() {
+export default async function Page() {
   return (
     <>
         <Hero/>

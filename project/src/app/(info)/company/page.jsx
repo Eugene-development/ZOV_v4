@@ -6,7 +6,7 @@ import Video from './z-module/components/Video'
 import Values from './z-module/components/Values'
 import Team from './z-module/components/Team'
 
-export default function Company() {
+export default function Page() {
   return (
     <motion.main initial={{opacity:0}} animate= {{opacity:1}}>
       <div className="bg-white">

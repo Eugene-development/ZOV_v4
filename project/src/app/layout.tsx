@@ -22,11 +22,10 @@ export default function RootLayout({
     <html lang="ru">
       <body className={inter.className}>
         <Banner/>
-        {/* <Menu /> */}
         <Header />
           {children}
         <Footer/>
-        </body>
+      </body>
     </html>
   )
 }

@@ -4,7 +4,7 @@ import Head from "./z-module/components/Head";
 import Map from "./z-module/components/Map";
 import Addresses from "./z-module/components/Addresses";
 
-export default function Showrooms() {
+export default function Page() {
   return (
     <motion.main initial={{ opacity:0 }} animate={{ opacity:2 }}>
       <Head/>
