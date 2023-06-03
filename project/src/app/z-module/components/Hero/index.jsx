@@ -10,7 +10,7 @@ export default function Hero() {
     <motion.main initial={{opacity:0}} animate= {{opacity:1}}>
       <div className="bg-white ">
         <div className="relative isolate overflow-hidden bg-gradient-to-b from-gray-100/20">
-          <div className="mx-auto max-w-full pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-2 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-full pb-20 pt-10 sm:pb-24 lg:grid lg:grid-cols-2 lg:gap-x-2 lg:px-8 lg:py-16">
             <div className="px-10 lg:px-2 lg:pt-4">
               <div className="mx-auto max-w-2xl">
                 <div className="max-w-xl">
