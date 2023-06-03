@@ -178,7 +178,7 @@ export default function Menu() {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon className="h-6 w-6 hover:text-red-800" aria-hidden="true" />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -187,7 +187,7 @@ export default function Menu() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-lg font-bold leading-7 hover:bg-gray-50 hover:text-red-800">
                         Каталог
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
@@ -200,7 +200,7 @@ export default function Menu() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -209,34 +209,49 @@ export default function Menu() {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+
+
+                <Link
+                  href="/company"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
                 >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  Компания
+                </Link>
+                <Link
+                  href="/service"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
                 >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  Сервис
+                </Link>
+                <Link
+                  href="/contacts"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
                 >
-                  Company
-                </a>
+                  Салоны
+                </Link>
+                <Link
+                  href="/actions"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
+                >
+                  Акции
+                </Link>
+                <Link
+                  href="/blog"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
+                >
+                  Блог
+                </Link>
               </div>
               <div className="py-6">
                 <div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
                     <div
-                        className="flex rounded-lg px-3 py-1.5 text-xl font-semibold leading-6 text-gray-800 shadow-xl ring-2 ring-gray-200/100 hover:ring-gray-500/20 "
+                        className="flex rounded-lg px-3 py-1.5 text-xl mx-auto font-semibold leading-6 text-gray-800 shadow-xl ring-2 ring-gray-200/100 hover:ring-gray-500/20 "
                     >
-                        <PhoneIcon className="block h-6 w-6" aria-hidden="true" />
-                        <Link href="tel:79154000020" className="ml-2 text-lg font-bold "
-                            >8 (915) 400-00-20
+                      <div className="flex mx-auto">   
+                        <Link href="tel:79154000020" className="flex ml-2 text-lg font-bold "
+                            > <PhoneIcon className="block mr-3 h-6 w-6 hover:text-red-800" aria-hidden="true" /> 8 (915) 400-00-20
                         </Link>
+                      </div>
                     </div>
                 </div> 
               </div>
