@@ -1,8 +1,7 @@
 
 export default function Article({ param }) {
   return (
-    <>
-    
+    <>  
         <main className="pb-16 lg:pb-24 bg-white dark:bg-gray-900">
         <header className="py-12">
             <div className="px-4 mx-auto w-full max-w-screen-xl text-center">
