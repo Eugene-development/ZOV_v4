@@ -8,7 +8,7 @@ import {
   CursorArrowRaysIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronRightIcon, PhoneIcon, RectangleGroupIcon } from '@heroicons/react/20/solid'
+import { ChevronRightIcon, ChevronDownIcon, PhoneIcon, RectangleGroupIcon } from '@heroicons/react/20/solid'
 
 const products = [
   {
@@ -150,13 +150,16 @@ export default function Menu() {
           <div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
             <div className="bg-white flex rounded-lg px-2 xl:px-6 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
                 <PhoneIcon className="block h-4 w-4 xl:h-6 xl:w-6 text-gray-950 animate-pulse" aria-hidden="true" />
-                <Link href="tel:79801506943" className=" ml-2 text-sm xl:text-lg font-bold text-gray-950"
+                <Link href="tel:79154000020" className=" ml-2 text-sm xl:text-lg font-bold text-gray-950"
                     >8 (915) 400-00-20
                 </Link>
             </div>
           </div>
         </div>
       </nav>
+
+
+      {/* MobileMenu */}
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -185,14 +188,14 @@ export default function Menu() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
-                        Product
+                        Каталог
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {products.map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
@@ -226,17 +229,17 @@ export default function Menu() {
                 </a>
               </div>
               <div className="py-6">
-<div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
-                                        <div
-                                            className="flex rounded-lg px-3 py-1.5 text-xl font-semibold leading-6 text-gray-50 shadow-xl ring-2 ring-gray-200/100 hover:ring-gray-500/20 "
-                                        >
-                                            <PhoneIcon className="block h-6 w-6" aria-hidden="true" />
-                                            <Link href="tel:79801506943" className="ml-2 text-lg font-bold "
-                                                >8 (980) 150-69-43
-                                            </Link>
-                                        </div>
-                                    </div> 
-                                                 </div>
+                <div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
+                    <div
+                        className="flex rounded-lg px-3 py-1.5 text-xl font-semibold leading-6 text-gray-800 shadow-xl ring-2 ring-gray-200/100 hover:ring-gray-500/20 "
+                    >
+                        <PhoneIcon className="block h-6 w-6" aria-hidden="true" />
+                        <Link href="tel:79154000020" className="ml-2 text-lg font-bold "
+                            >8 (915) 400-00-20
+                        </Link>
+                    </div>
+                </div> 
+              </div>
             </div>
           </div>
         </Dialog.Panel>
