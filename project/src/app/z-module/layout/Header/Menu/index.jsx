@@ -36,7 +36,7 @@ const products = [
     icon: CursorArrowRaysIcon,
   },
 ]
-const callsToAction = [
+const equipment = [
   { name: 'Бытовая техника', href: '#', icon: RectangleGroupIcon },
   { name: 'Мебельная фурнитура', href: '#', icon: RectangleGroupIcon },
   { name: 'Мойки и аксессуары', href: '#', icon: RectangleGroupIcon },
@@ -112,7 +112,7 @@ export default function Menu() {
                 <div className="bg-gray-800">
                   <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5">
-                      {callsToAction.map((item) => (
+                      {equipment.map((item) => (
                         <div
                           key={item.name}
                           className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-50 hover:bg-gray-800"
@@ -197,6 +197,7 @@ export default function Menu() {
                       <Disclosure.Panel className="mt-2 space-y-2">
                         {products.map((item) => (
                           <Disclosure.Button
+                            onClick={() => setMobileMenuOpen(false)}
                             key={item.name}
                             as="a"
                             href={item.href}
@@ -210,32 +211,36 @@ export default function Menu() {
                   )}
                 </Disclosure>
 
-
                 <Link
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/company"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
                 >
                   Компания
                 </Link>
-                                <Link
+                <Link
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/contacts"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
                 >
                   Салоны
                 </Link>
                 <Link
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/service"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
                 >
                   Сервис
                 </Link>
                 <Link
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/actions"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
                 >
                   Акции
                 </Link>
                 <Link
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/blog"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
                 >
