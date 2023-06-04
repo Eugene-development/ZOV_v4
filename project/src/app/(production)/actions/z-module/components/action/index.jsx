@@ -25,7 +25,7 @@ export default function Action() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
                 <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Акции и подарки</h2>
-                <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">Мы стараемся Вас порадовать не только качественной и красивой мебелью, но и приятными бонусами при покупке!</p>
+                <p className="font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">Мы стараемся Вас порадовать не только качественной и красивой мебелью, но и приятными бонусами при покупке!</p>
             </div> 
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
