@@ -12,7 +12,7 @@ export default function Filter() {
       </p>
     </div> */}
 
-        <section className="flex items-center py-10 bg-gray-50 dark:bg-gray-900">
+        <section className="flex items-center py-8 bg-gray-50 dark:bg-gray-900">
             
           <div className="w-full max-w-screen-xl px-4 mx-auto lg:px-12">
               <div className="relative px-4 overflow-hidden bg-white shadow-md dark:bg-gray-800 sm:rounded-lg">
@@ -109,21 +109,21 @@ export default function Filter() {
                         <input id="sort-category" type="radio" value="" name="show-only"
                             className="w-4 h-4 bg-gray-100 border-gray-300 text-red-600 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
                         <label for="sort-category" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                        Прямая
+                        Прямое
                         </label>
                     </div>
                     <div className="flex items-center mr-4">
                         <input id="sort-price" type="radio" value="" name="show-only"
-                            className="w-4 h-4 bg-gray-100 border-gray-300 text-red-600 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                            className="w-4 h-4  "/>
                         <label for="sort-price" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                        "Г"-Образная
+                        "Г"-Образное
                         </label>
                     </div>
                     <div className="flex items-center mr-4">
                         <input id="sort-state" type="radio" value="" name="show-only"
                             className="w-4 h-4 bg-gray-100 border-gray-300 text-red-600 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
                         <label for="sort-state" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                        "П"-Образная
+                        "П"-Образное
                         </label>
                     </div>
                   </div>
@@ -132,7 +132,7 @@ export default function Filter() {
                   <button id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown"
                           className="flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-red-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                           type="button">
-                      Сбросить фильтр
+                      Показать варианты
                   </button>
                   <div id="actionsDropdown"
                       className="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
