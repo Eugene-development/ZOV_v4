@@ -1,15 +1,15 @@
-"use client"
-import { motion } from "framer-motion"
-import Action from "./z-module/components/action";
-
 import { usePathname } from "next/navigation"
 
+import Action from "./z-module/components/action";
+
+export const metadata = {
+  title: 'Фабрика ЗОВ | Акции',
+  description: 'Скидки и акции компании ЗОВ',
+}
+
 export default () => {
-    const pathname = usePathname();
+    // const pathname = usePathname();
     return (
-        <motion.main initial={{opacity:0}} animate= {{opacity:1}}>
-            {/* <p>{pathname}</p> */}
-            <Action/>
-        </motion.main>
+        <Action/>
     )
 }

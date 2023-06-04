@@ -1,12 +1,13 @@
-"use client"
-import { motion } from "framer-motion"
-
 import ServiceList from "./z-module/components/ServiceList"
+
+export const metadata = {
+  title: 'Фабрика ЗОВ | Сервис',
+  description: 'Услуги нашей компании',
+}
+
 
 export default function Page() {
   return (
-    <motion.main initial={{opacity:0}} animate= {{opacity:1}}>
       <ServiceList/>
-    </motion.main>
   )
 }

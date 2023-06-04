@@ -1,5 +1,9 @@
+"use client"
+import { motion } from "framer-motion"
+
 export default function Hero (){
     return(
+      <motion.main initial={{opacity:0}} animate= {{opacity:1}}>
         <div className="relative isolate -z-10">
           <svg
             className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
@@ -115,5 +119,7 @@ export default function Hero (){
             </div>
           </div>
         </div>
+      </motion.main>
+
     )
 }

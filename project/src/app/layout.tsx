@@ -9,10 +9,6 @@ import Footer from "./z-module/layout/Footer";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Фабрика ЗОВ | Мебель для жизни',
-  description: 'GenerateVd by create next app',
-}
 
 export default function RootLayout({
   children,

@@ -1,3 +1,6 @@
+"use client"
+import { motion } from "framer-motion"
+
 const showrooms = [
     {
         city: 'Москва',
@@ -67,26 +70,28 @@ const showrooms = [
 
 export default function Addresses() {
   return (
-    <aside aria-label="Related articles" className="bg-white dark:bg-gray-900">
-        <div className="px-4 md:px-20 py-8 mx-auto max-w-full">
-            <div className="grid gap-6 lg:gap-12 md:grid-cols-2 ">
-                {showrooms.map(item => (
-                     <div key={item.address} className="flex flex-col xl:flex-row transition ease-in-out hover:scale-105 border-r">
-                            <img src={item.img} className="md:mr-5 max-w-xs rounded-md" alt="saloon"></img>
-                        <div className="flex flex-col mt-2">
-                            <p className="mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">
-                                <span>г. {item.city},</span>
-                            </p>
-                            <p className="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">
-                                <span>{item.address}</span>
-                            </p>
-                            <p className="my-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">Метро: "{item.metro}"</p>
-                            <p className="mb-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">Режим работы: {item.workingMode}</p>
+    <motion.main initial={{ opacity:0 }} animate={{ opacity:2 }}>
+        <aside aria-label="Related articles" className="bg-white dark:bg-gray-900">
+            <div className="px-4 md:px-20 py-8 mx-auto max-w-full">
+                <div className="grid gap-6 lg:gap-12 md:grid-cols-2 ">
+                    {showrooms.map(item => (
+                        <div key={item.address} className="flex flex-col xl:flex-row transition ease-in-out hover:scale-105 border-r">
+                                <img src={item.img} className="md:mr-5 max-w-xs rounded-md" alt="saloon"></img>
+                            <div className="flex flex-col mt-2">
+                                <p className="mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">
+                                    <span>г. {item.city},</span>
+                                </p>
+                                <p className="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">
+                                    <span>{item.address}</span>
+                                </p>
+                                <p className="my-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">Метро: "{item.metro}"</p>
+                                <p className="mb-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">Режим работы: {item.workingMode}</p>
+                            </div>
                         </div>
-                     </div>
-                ))} 
+                    ))} 
+                </div>
             </div>
-        </div>
-    </aside>
+        </aside>
+    </motion.main>
   )
 }

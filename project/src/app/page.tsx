@@ -12,8 +12,8 @@ import Call from "./z-module/components/Call";
 
 
 export const metadata = {
-  title: 'Тест Тайтл',
-  description: 'овылтиджывьищывпльи',
+  title: 'Фабрика ЗОВ | Мебель для жизни',
+  description: 'Кухонные гарнитуры и шкафы купе из материалов высокого качества',
 }
 
 // export async function generateMetadata({ params, searchParams }) {
