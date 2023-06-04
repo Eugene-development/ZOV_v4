@@ -217,17 +217,17 @@ export default function Menu() {
                 >
                   Компания
                 </Link>
+                                <Link
+                  href="/contacts"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
+                >
+                  Салоны
+                </Link>
                 <Link
                   href="/service"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
                 >
                   Сервис
-                </Link>
-                <Link
-                  href="/contacts"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-red-800"
-                >
-                  Салоны
                 </Link>
                 <Link
                   href="/actions"
