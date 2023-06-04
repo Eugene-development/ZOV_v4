@@ -32,9 +32,9 @@ export default function RootLayout({children}) {
                       `
             }}
           />
-        <noscript><div><img src="https://mc.yandex.ru/watch/93835019" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <noscript><div><img src="https://mc.yandex.ru/watch/93835019" style={{position:'absolute', left:'-9999px'}} alt="" /></div></noscript>
       </head>
-      
+
       <body className={inter.className}>
         <Banner/>
         <Header />
