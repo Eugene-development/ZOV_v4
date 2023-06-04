@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="bg-white ">
         <div className="relative isolate overflow-hidden bg-gradient-to-b from-gray-100/20">
           <div className="mx-auto max-w-full pb-20 pt-10 sm:pb-24 lg:grid lg:grid-cols-2 lg:gap-x-2 lg:px-8 lg:py-16">
-            <div className="px-10 lg:px-2 lg:pt-4">
+            <div className="px-6 lg:px-2 lg:pt-4">
               <div className="mx-auto max-w-2xl">
                 <div className="max-w-xl">
                   {/* <img
@@ -21,11 +21,11 @@ export default function Hero() {
                   /> */}
                   <div className="mt-4 sm:mt-8 lg:mt-16">
                     <a href="#" className="inline-flex space-x-6">
-                      <span className="rounded-full bg-gray-500/10 px-3 py-1 text-sm font-semibold leading-6 text-gray-900 ring-1 ring-inset ring-gray-600/10 ">
+                      <span className="rounded-full bg-gray-500/10 px-3 py-1 text-xs sm:text-sm font-semibold leading-6 text-gray-900 ring-1 ring-inset ring-gray-600/10 ">
                         Фабрика мебели "ЗОВ"
                       </span>
                       <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6ЛЦ text-gray-600">
-                        <span>Каталог 2023 года</span>
+                        <span>Ваш промокод</span>
                         <ChevronRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                       </span>
                     </a>
@@ -39,11 +39,11 @@ export default function Hero() {
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
                       href="#"
-                      className="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+                      className="rounded-md bg-gray-700 px-3.5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
                     >
                       Заказать проект
                     </a>
-                    <a href="#" className="text-sm font-semibold leading-6 text-red-900">
+                    <a href="#" className="text-xs sm:text-sm font-semibold leading-6 text-red-900">
                       Консультация у вас дома <span aria-hidden="true">→</span>
                     </a>
                   </div>
