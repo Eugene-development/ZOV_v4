@@ -19,7 +19,7 @@ export default function Filter() {
               <div
                   className="flex flex-col pt-4 space-y-3 md:flex-row md:items-center md:justify-between md:space-y-0 md:space-x-4">
                   <div>
-                    <nav
+                    {/* <nav
                         className="flex px-3 py-2 mb-10 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600"
                         aria-label="Breadcrumb">
                         <ol className="inline-flex items-center space-x-1 md:space-x-3">
@@ -57,7 +57,7 @@ export default function Filter() {
                             </div>
                         </li>
                         </ol>
-                    </nav>
+                    </nav> */}
                     {/* <h4>
                         <span className="dark:text-white">Выберите подходящий фильтр:</span>
                     </h4> */}
@@ -70,65 +70,62 @@ export default function Filter() {
                       </button>
                   </div> */}
               </div>
-              <div className="grid w-full grid-cols-2 gap-4 pb-4 md:grid-cols-3 lg:grid-cols-6">
-                  <select
-                  className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full px-2.5 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
+              <div className="grid w-full grid-cols-1 gap-4 pb-4 md:grid-cols-3 lg:grid-cols-6">
+                  <select className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full px-2.5 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
                     <option selected>Все стили</option>
                     <option value="samsung">Современный</option>
                     <option value="apple">Классика</option>
                     <option value="nokia">Лофт</option>
                     <option value="sony">Sony</option>
                   </select>
-                  <select
-                  className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full px-2.5 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
+                  <select className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full px-2.5 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
                   <option selected>Все цвета</option>
                     <option value="tablet">Синий</option>
                     <option value="phone">Красный</option>
                     <option value="tv">Зелёный</option>
                     <option value="console">Console</option>
                   </select>
-                  <select
-                  className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full px-2.5 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
-                  <option selected>Все материалы</option>
-                  <option value="black">ПВХ</option>
-                  <option value="white">Эмаль</option>
-                  <option value="silver">Акрил</option>
-                  <option value="silver">Массив</option>
+                  <select className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full px-2.5 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
+                    <option selected>Все материалы</option>
+                    <option value="black">ПВХ</option>
+                    <option value="white">Эмаль</option>
+                    <option value="silver">Акрил</option>
+                    <option value="silver">Массив</option>
                   </select>
               </div>
               <div className="items-center justify-between block w-full py-3 border-t dark:border-gray-700 md:flex">
-                  <div className="flex flex-wrap mb-4 md:mb-0">
-                  <div className="flex items-center w-full mb-2 mr-4 text-sm font-medium text-gray-900 dark:text-white md:w-auto md:mb-0">
-                      Расположение:
-                  </div>
-                  <div className="flex items-center mr-4">
-                      <input id="all-products" type="radio" value="" name="show-only" checked
-                          className="w-4 h-4 bg-gray-100 border-gray-300 text-red-600 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-                      <label for="all-products" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                      Любое
-                      </label>
-                  </div>
-                  <div className="flex items-center mr-4">
-                      <input id="sort-category" type="radio" value="" name="show-only"
-                          className="w-4 h-4 bg-gray-100 border-gray-300 text-red-600 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-                      <label for="sort-category" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                      Прямая
-                      </label>
-                  </div>
-                  <div className="flex items-center mr-4">
-                      <input id="sort-price" type="radio" value="" name="show-only"
-                          className="w-4 h-4 bg-gray-100 border-gray-300 text-red-600 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-                      <label for="sort-price" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                      "Г"-Образная
-                      </label>
-                  </div>
-                  <div className="flex items-center mr-4">
-                      <input id="sort-state" type="radio" value="" name="show-only"
-                          className="w-4 h-4 bg-gray-100 border-gray-300 text-red-600 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-                      <label for="sort-state" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                      "П"-Образная
-                      </label>
-                  </div>
+                  <div className="md:flex flex-wrap mb-4 md:mb-0">
+                    <div className="flex items-center w-full mb-2 mr-4 text-sm font-medium text-gray-900 dark:text-white md:w-auto md:mb-0">
+                        Расположение:
+                    </div>
+                    <div className="flex items-center mr-4">
+                        <input id="all-products" type="radio" value="" name="show-only" checked
+                            className="w-4 h-4 bg-gray-100 border-gray-300 text-red-600 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                        <label for="all-products" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        Любое
+                        </label>
+                    </div>
+                    <div className="flex items-center mr-4">
+                        <input id="sort-category" type="radio" value="" name="show-only"
+                            className="w-4 h-4 bg-gray-100 border-gray-300 text-red-600 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                        <label for="sort-category" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        Прямая
+                        </label>
+                    </div>
+                    <div className="flex items-center mr-4">
+                        <input id="sort-price" type="radio" value="" name="show-only"
+                            className="w-4 h-4 bg-gray-100 border-gray-300 text-red-600 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                        <label for="sort-price" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        "Г"-Образная
+                        </label>
+                    </div>
+                    <div className="flex items-center mr-4">
+                        <input id="sort-state" type="radio" value="" name="show-only"
+                            className="w-4 h-4 bg-gray-100 border-gray-300 text-red-600 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                        <label for="sort-state" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        "П"-Образная
+                        </label>
+                    </div>
                   </div>
 
                   <div>
