@@ -43,7 +43,7 @@ export default function Hero() {
                       Заказать проект
                     </a>
                     <a href="#" className="text-xs sm:text-sm font-semibold leading-6 text-red-900">
-                      Консультация у вас дома <span aria-hidden="true">→</span>
+                      Консультация специалиста <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
