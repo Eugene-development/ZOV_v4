@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <>
         <Head/>
-        <Filter/>
+        {/* <Filter/> */}
         <ProductList/>
     </>
   )
