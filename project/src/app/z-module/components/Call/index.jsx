@@ -1,6 +1,10 @@
-import React from "react";
+"use client"
+import { useStore } from "@/app/z-module/store"
+const { visibleFormConsultation } = useStore
 
 export default function Call() {
+  const { openVisibleFormConsultation } = visibleFormConsultation();
+
   return (
     <div className="bg-white">
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -14,12 +18,11 @@ export default function Call() {
             вопросы.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="#"
+            <button onClick={openVisibleFormConsultation}
               className="rounded-md bg-indigo-500 px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Бесплатная консультация
-            </a>
+            </button>
           </div>
         </div>
       </div>
