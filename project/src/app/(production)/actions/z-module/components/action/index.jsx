@@ -23,13 +23,22 @@ const features = [
 
 export default function Action() {
   return (
-    <motion.main initial={{opacity:0}} animate= {{opacity:1}}>
       <div className="overflow-hidden bg-white py-8 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
+          
+    <motion.main 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 2, y: -10 }} 
+      transition={{ type: "spring", stiffness: 50 }}
+    >
+
           <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
                   <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Акции и подарки</h2>
                   <p className="font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">Мы стараемся Вас порадовать не только качественной и красивой мебелью, но и приятными бонусами при покупке!</p>
-              </div> 
+          </div> 
+    </motion.main>
+
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
@@ -56,6 +65,5 @@ export default function Action() {
           </div>
         </div>
       </div>
-    </motion.main>
   )
 }

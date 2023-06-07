@@ -50,13 +50,20 @@ const services = [
 
 export default function ServiceList() {
   return (
-    <motion.main initial={{opacity:0}} animate= {{opacity:1}}>
       <div className="bg-white py-8 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <motion.main 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 2, y: -10 }} 
+      transition={{ type: "spring", stiffness: 50 }}
+    >
+
               <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
                   <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Сервис компании</h2>
-                  <p className="font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">На всём пути нашего сотрудничества от знакомства до установки мебели наши специалисты всегда готовы придти вам на помощь и решить любой вопрос.</p>
+                  <p className="font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">На всём пути нашего сотрудничества наши специалисты всегда готовы придти вам на помощь и решить любой вопрос.</p>
               </div> 
+    </motion.main>
+
           <div className="mx-auto mt-8 max-w-2xl sm:mt-20 lg:mt-12 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               {services.map((item) => (
@@ -79,6 +86,5 @@ export default function ServiceList() {
           </div>
         </div>
       </div>
-    </motion.main>
   )
 }
