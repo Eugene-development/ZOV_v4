@@ -2,8 +2,8 @@
 export default function Colors() {
   return (
     <section className="bg-white dark:bg-gray-900">
-        <div className="pt-8 px-16 mx-auto max-w-full lg:px-24 sm:text-center lg:pt-32">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Разнообразие цветов и оттенков</h2>
+        <div className="pt-8 mx-auto max-w-full px-8 sm:px-16 lg:px-24 sm:text-center lg:pt-32 text-center">
+            <h2 className="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Разнообразие цветов и оттенков</h2>
             <p className="font-light text-gray-500 sm:text-lg md:px-20 lg:px-38 xl:px-48 dark:text-gray-400">Вы обязательно найдёте подходящий цвет под ваш интерьер из более чем 2000 вариантов. От нежных пастельных тонов до ярких цветовых решений в матовом или глянцевом исполнении. </p>
             <div className="gap-4 mt-8 sm:grid sm:grid-cols-4 sm:mt-20">
                 <img className="col-span-1 mb-4 sm:mb-0 rounded-lg" src="https://zovrus.ru/files/_cache/product/chr-3018.resize800x800w.jpg?e74c691be26de5528a034a590850de05" alt="content gallery 1"/>

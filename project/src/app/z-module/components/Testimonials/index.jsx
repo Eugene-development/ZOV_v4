@@ -89,7 +89,7 @@ export default function Testimonials() {
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className=" text-3xl tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Отзывы о нашей работе.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-gray-700">
@@ -123,7 +123,7 @@ export default function Testimonials() {
                         </div>
                         <div className="overflow-hidden rounded-sm bg-gray-50">
                           <Image
-                            className="h-24 w-32 object-cover"
+                            className="h-24 w-32 object-cover rounded-xl"
                             src={testimonial.author.image}
                             alt=""
                             width={56}
