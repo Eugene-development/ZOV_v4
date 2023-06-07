@@ -6,8 +6,10 @@ const visibleBanner = create((set) => ({
 }));
 
 const visibleFormConsultation = create((set) => ({
-  currentVisibleFormConsultation: true,
-  changeVisibleFormConsultation: () =>
+  currentVisibleFormConsultation: false,
+  openVisibleFormConsultation: () =>
+    set(() => ({ currentVisibleFormConsultation: true })),
+  closeVisibleFormConsultation: () =>
     set(() => ({ currentVisibleFormConsultation: false })),
 }));
 

@@ -1,10 +1,16 @@
 "use client"
 import { motion } from "framer-motion"
 
+import { useStore } from "../../store"
+const { visibleFormConsultation } = useStore
+
+
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import Slider from './Slider'
 
 export default function Hero() {
+  const { openVisibleFormConsultation } = visibleFormConsultation();
+
   return (
     <motion.main initial={{opacity:0}} animate= {{opacity:1}}>
       <div className="bg-white ">
@@ -42,9 +48,9 @@ export default function Hero() {
                     >
                       Заказать проект
                     </a>
-                    <a href="#" className="text-xs sm:text-sm font-semibold leading-6 text-red-900">
+                    <button onClick={openVisibleFormConsultation} className="text-xs sm:text-sm font-semibold leading-6 text-red-900">
                       Консультация специалиста <span aria-hidden="true">→</span>
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

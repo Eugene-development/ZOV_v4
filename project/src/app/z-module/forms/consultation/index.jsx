@@ -4,13 +4,18 @@ import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { LinkIcon, PlusIcon, QuestionMarkCircleIcon } from '@heroicons/react/20/solid'
 
+import { useStore } from "../../store"
+const { visibleFormConsultation } = useStore
+
 
 export default function Consultation() {
-  const [open, setOpen] = useState(true)
+  const { currentVisibleFormConsultation, closeVisibleFormConsultation } = visibleFormConsultation();
+
 
   return (
-    <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={setOpen}>
+    
+    <Transition.Root show={currentVisibleFormConsultation} as={Fragment}>
+      <Dialog as="div" className="relative z-10" onClose={closeVisibleFormConsultation}>
 
         <Transition.Child
           as={Fragment}
@@ -48,7 +53,7 @@ export default function Consultation() {
                             <button
                               type="button"
                               className="rounded-md bg-indigo-800 text-indigo-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
-                              onClick={() => setOpen(false)}
+                              onClick={() => closeVisibleFormConsultation()}
                             >
                               <span className="sr-only">Закрыть панель</span>
                               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -207,13 +212,14 @@ export default function Consultation() {
                     </div>
                     <div className="flex flex-shrink-0 justify-end px-4 py-4">
                       <button
+                        onClick={() => closeVisibleFormConsultation()}
                         type="button"
                         className="rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-                        onClick={() => setOpen(false)}
                       >
                         Закрыть
                       </button>
                       <button
+                        onClick={() => closeVisibleFormConsultation()}
                         type="submit"
                         className="ml-4 inline-flex justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                       >
