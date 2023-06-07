@@ -1,7 +1,7 @@
 import { gql, request } from 'graphql-request';
 import { Suspense } from 'react';
 
-export const ALL_CATALOG = gql`
+const ALL_CATALOG = gql`
 	query product ($slug: String!, $key: String!) {
 		product_one(slug: $slug, key: $key) {
 			id
@@ -44,7 +44,10 @@ const catalog = await getCatalog();
 // console.log(catalog)
 
   return (
-	<Suspense fallback={<p>Loading feed...</p>}>
+	<Suspense fallback={
+		<>	
+		<p>Loading feed...</p><br/></>
+	}>
     	<div>{catalog.product_one.value}</div>
     </Suspense>
   )
