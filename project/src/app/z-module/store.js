@@ -5,6 +5,13 @@ const visibleBanner = create((set) => ({
   changeVisibleBanner: () => set(() => ({ currentVisibleBanner: false })),
 }));
 
+const visibleFormConsultation = create((set) => ({
+  currentVisibleFormConsultation: true,
+  changeVisibleFormConsultation: () =>
+    set(() => ({ currentVisibleFormConsultation: false })),
+}));
+
 export const useBannerStore = {
   visibleBanner,
+  visibleFormConsultation,
 };
