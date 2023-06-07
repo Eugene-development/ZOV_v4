@@ -70,7 +70,11 @@ const showrooms = [
 
 export default function Addresses() {
   return (
-    <motion.main initial={{ opacity:0 }} animate={{ opacity:2 }}>
+    <motion.main 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 2, y: -10 }} 
+      transition={{ type: "spring", stiffness: 50 }}
+    >
         <aside aria-label="Related articles" className="bg-white dark:bg-gray-900">
             <div className="px-4 md:px-20 py-8 mx-auto max-w-full">
                 <div className="grid gap-6 lg:gap-12 md:grid-cols-2 ">

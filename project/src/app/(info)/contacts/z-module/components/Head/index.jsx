@@ -3,11 +3,7 @@ import { motion } from "framer-motion"
 
 export default function Head() {
   return (
-    <motion.main 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 2, y: -10 }} 
-      transition={{ type: "spring", stiffness: 50 }}
-    >
+    <motion.main initial={{ opacity:0 }} animate={{ opacity:2 }}>
       <div className="bg-white py-8 sm:py-20">
           <div className="mx-auto max-w-screen-sm text-center">
               <h2 className="mb-4 text-2xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Адреса наших салонов</h2>
