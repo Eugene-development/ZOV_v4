@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import Hero from './z-module/components/Hero'
 import Content from './z-module/components/Content'
 import Video from './z-module/components/Video'
@@ -13,7 +14,9 @@ export default function Page() {
   return (
       <div className="bg-white">
         <main className="isolate">
-          <Hero/>
+              <Suspense fallback={<p>Loading feed...</p>}>
+                <Hero/>
+              </Suspense>
           <Content/>
           <Video/>
           <Values/>
