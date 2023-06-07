@@ -1,7 +1,7 @@
 "use client"
 import CloseButton from './CloseButton';
-import { useBannerStore } from '../../store'
-const { visibleBanner } = useBannerStore
+import { useStore } from '../../store'
+const { visibleBanner } = useStore
 
 export default function Banner() {
   const { currentVisibleBanner } = visibleBanner();

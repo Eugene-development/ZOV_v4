@@ -1,7 +1,7 @@
 "use client"
 import { XMarkIcon } from '@heroicons/react/20/solid'
-import { useBannerStore } from '../../../store'
-const { visibleBanner } = useBannerStore
+import { useStore } from '../../../store'
+const { visibleBanner } = useStore
 
 export default function closeButton() {
     const { changeVisibleBanner } = visibleBanner();

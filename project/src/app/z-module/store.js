@@ -11,7 +11,7 @@ const visibleFormConsultation = create((set) => ({
     set(() => ({ currentVisibleFormConsultation: false })),
 }));
 
-export const useBannerStore = {
+export const useStore = {
   visibleBanner,
   visibleFormConsultation,
 };
