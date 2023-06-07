@@ -88,9 +88,9 @@ export default function Testimonials() {
       className="bg-gray-50 py-20 sm:py-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
+        <div className="mx-auto max-w-2xl text-center">
           <h2 className="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-            Отзывы о нашей работе.
+            Отзывы <br className="md:hidden" /> о нашей работе
           </h2>
           <p className="mt-4 text-lg tracking-tight text-gray-700">
             Однажды, возможно, мы разместим и ваш положительный отзыв о нашей компании. Мы будем очень стараться для этого.
