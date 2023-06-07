@@ -100,14 +100,14 @@ export default function ProductList() {
                       <div class="flex items-center gap-1.5">
                         <span class="text-base font-normal text-gray-700 dark:text-gray-400">
                           <span class="font-semibold">
-                            Вы можете вызвать замерщика на объект.
+                            Получите консультацию на объекте.
                           </span>
                         </span>
                       </div>
 
                       <button onClick={openVisibleFormConsultation}
                         class="inline-flex items-center text-base font-medium text-red-600 hover:underline dark:text-red-500">
-                        Записаться на замер
+                        Записаться
                         <svg aria-hidden="true" class="w-5 h-5 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                           fill="currentColor">
                           <path fill-rule="evenodd"
