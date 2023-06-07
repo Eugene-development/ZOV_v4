@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="bg-white ">
         <div className="relative isolate overflow-hidden bg-gradient-to-b from-gray-100/20">
           <div className="mx-auto max-w-full pb-20 pt-10 sm:pb-24 lg:grid lg:grid-cols-2 lg:gap-x-2 lg:px-8 lg:py-16">
-            <div className="px-6 lg:px-2 lg:pt-4">
+            <div className="px-5 lg:px-2 lg:pt-4">
               <div className="mx-auto max-w-2xl">
                 <div className="max-w-xl">
                   {/* <img
@@ -35,16 +35,16 @@ export default function Hero() {
                       </span>
                     </a>
                   </div>
-                  <h1 className="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl font-[lato]">
+                  <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl font-[lato]">
                     Мебель для жизни
                   </h1>
-                  <p className="mt-6 text-lg leading-8 text-gray-600 ">
-                    Фабрика "ЗОВ" - это один из крупнейших производителей кухонной и корпусной мебели как в Республике Беларусь, так и за её пределами. Приобретая мебель нашей фабрики, Вы можете быть уверены в достойном качестве продукции. {/* Наша крупнейшая в Москве и области дилерская сеть насчитывает 39 салонов, где вы можете ознакомиться с образцами и получить полную консультацию.  */}
+                  <p className="mt-6 text-sm md:text-lg leading-6 text-gray-600 ">
+                    Фабрика "ЗОВ" - это один из крупнейших производителей кухонной и корпусной мебели как в Республике Беларусь, так и далеко за её пределами. {/* Наша крупнейшая в Москве и области дилерская сеть насчитывает 39 салонов, где вы можете ознакомиться с образцами и получить полную консультацию.  */}
                   </p>
-                  <div className="mt-10 flex items-center gap-x-6">
+                  <div className="mt-8 md:mt-24 flex items-center gap-x-6">
                     <a
                       href="#"
-                      className="rounded-md bg-gray-700 px-3.5 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+                      className="rounded-md bg-gray-700 px-2.5 sm:px-4 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
                     >
                       Заказать проект
                     </a>
