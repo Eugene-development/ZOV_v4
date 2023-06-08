@@ -136,9 +136,18 @@ export default function Consultation() {
                             <div>
                               <label
                                 htmlFor="file"
-                                className="block text-sm mb-2 font-medium leading-6 text-gray-900"
-                              >Добавьте файлы <br className='md:hidden' /> (планировка, дизайн помещения и пр.)</label>
-                              <input type="file" id="file" name="files" multiple />
+                                className="block text-sm font-medium leading-6 text-gray-900"
+                              >
+                                Добавьте файлы <br className='md:hidden' /> (планировка, дизайн помещения и пр.)
+                              </label>
+                              <div className="mt-2">
+                                <input
+                                  type="file"
+                                  name="file"
+                                  id="file"
+                                  className="block w-full  py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                                />
+                              </div>
                             </div>
                             <div>
                               <label
