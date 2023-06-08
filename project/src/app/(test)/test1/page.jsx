@@ -52,8 +52,7 @@ const catalog = await getCatalog();
 
   return (
 	<Suspense fallback={
-		<>	
-		<p>Loading feed...</p><br/></>
+		<p>Loading feed...</p>
 	}>
     	<div>{catalog.product_one.value}</div>
     </Suspense>
