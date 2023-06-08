@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
+        <link rel="icon" href="../image/favicon.ico" sizes="any" />
         <script
             dangerouslySetInnerHTML={{
               __html: `

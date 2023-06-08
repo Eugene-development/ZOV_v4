@@ -6,7 +6,27 @@ const { visibleFormConsultation } = useStore
 const products = [
   {
     project: "РШ 8327",
-    img: 'https://zovrus.ru/files/_cache/product/chr-0670_2.resize1200x1200w.jpg?5c92da30a4854ee4a81e8a9dcb3c75ed'
+    img: 'https://zovofficial.com/image/cache/catalog/products/garderobnye-shkafy-i-sistemy/2022/aristo-slim-line/int-2/cam-1-1600x1086.jpg'
+  },
+  {
+    project: "РШ 8327",
+    img: 'https://zovofficial.com/image/cache/catalog/products/garderobnye-shkafy-i-sistemy/2022/aristo-slim-line/int-2/cam-1-1600x1086.jpg'
+  },
+  {
+    project: "РШ 8327",
+    img: 'https://zovofficial.com/image/cache/catalog/products/garderobnye-shkafy-i-sistemy/2022/aristo-slim-line/int-2/cam-1-1600x1086.jpg'
+  },
+  {
+    project: "РШ 8327",
+    img: 'https://zovofficial.com/image/cache/catalog/products/garderobnye-shkafy-i-sistemy/2022/aristo-slim-line/int-2/cam-1-1600x1086.jpg'
+  },
+  {
+    project: "РШ 8327",
+    img: 'https://zovofficial.com/image/cache/catalog/products/garderobnye-shkafy-i-sistemy/2022/aristo-slim-line/int-2/cam-1-1600x1086.jpg'
+  },
+  {
+    project: "РШ 8327",
+    img: 'https://zovofficial.com/image/cache/catalog/products/garderobnye-shkafy-i-sistemy/2022/aristo-slim-line/int-2/cam-1-1600x1086.jpg'
   },
 ]
 
@@ -21,10 +41,10 @@ export default function ProductList() {
         >
           <section className="bg-white dark:bg-gray-900 antialiased">
                 <div className="max-w-screen-xl px-4 py-4 mx-auto sm:py-6 ">
-                  <div className="grid grid-cols-1 gap-4 mt-6 lg:mt-8 sm:grid-cols-2 md:grid-cols-3">
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                     {products.map(item => (
                       <div className="relative overflow-hidden rounded-lg group">
-                        <img className="object-cover w-full h-[240px] scale-100 ease-in duration-300 group-hover:scale-125" src={item.img} alt="кухонный гарнитур"/>
+                        <img className="object-cover w-full h-[280px] scale-100 ease-in duration-300 group-hover:scale-125" src={item.img} alt="кухонный гарнитур"/>
                         <div className="absolute inset-0 grid items-end justify-center p-4 bg-gradient-to-b from-transparent to-black/60">
                           <div className="text-center">
                             <p className="text-base font-medium text-gray-300">
