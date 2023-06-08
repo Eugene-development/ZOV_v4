@@ -3,13 +3,14 @@ import { motion } from "framer-motion"
 
 import { useStore } from "@/app/z-module/store"
 // import { useStore } from "@/app/stores/forms/store"
-const { visibleFormConsultation } = useStore
+const { visibleFormProject, visibleFormConsultation } = useStore
 
 
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import Slider from './Slider'
 
 export default function Hero() {
+  const { openVisibleFormProject } = visibleFormProject();
   const { openVisibleFormConsultation } = visibleFormConsultation();
 
   return (
@@ -43,12 +44,12 @@ export default function Hero() {
                     Фабрика "ЗОВ" - это один из крупнейших производителей кухонной и корпусной мебели как в Республике Беларусь, так и далеко за её пределами. {/* Наша крупнейшая в Москве и области дилерская сеть насчитывает 39 салонов, где вы можете ознакомиться с образцами и получить полную консультацию.  */}
                   </p>
                   <div className="mt-8 md:mt-24 flex items-center gap-x-6">
-                    <a
-                      href="#"
+                    <button
+                      onClick={openVisibleFormProject}
                       className="rounded-md bg-gray-700 px-2.5 sm:px-4 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
                     >
                       Заказать проект
-                    </a>
+                    </button>
                     <button onClick={openVisibleFormConsultation} className="text-xs sm:text-sm font-semibold leading-6 text-red-900">
                       Консультация специалиста <span aria-hidden="true">→</span>
                     </button>

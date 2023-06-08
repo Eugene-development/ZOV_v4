@@ -13,7 +13,16 @@ const visibleFormConsultation = create((set) => ({
     set(() => ({ currentVisibleFormConsultation: false })),
 }));
 
+const visibleFormProject = create((set) => ({
+  currentVisibleFormProject: false,
+  openVisibleFormProject: () =>
+    set(() => ({ currentVisibleFormProject: true })),
+  closeVisibleFormProject: () =>
+    set(() => ({ currentVisibleFormProject: false })),
+}));
+
 export const useStore = {
   visibleBanner,
+  visibleFormProject,
   visibleFormConsultation,
 };

@@ -2,6 +2,7 @@
 import '../../src/css/globals.css'
 import { Inter } from 'next/font/google'
 
+import FormProject from './z-module/forms/project'
 import FormConsultation from './z-module/forms/consultation'
 
 import Banner from "./z-module/layout/Banner";
@@ -41,6 +42,7 @@ export default function RootLayout({
         <noscript><div><img src="https://mc.yandex.ru/watch/93835019" style={{position:'absolute', left:'-9999px'}} alt="" /></div></noscript>
       </head>
       <body className={inter.className}>
+        <FormProject/>
         <FormConsultation/>
         <Banner/>
         <Header />
