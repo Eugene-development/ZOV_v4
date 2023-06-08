@@ -72,7 +72,7 @@ export default function BlogList() {
         <section className="bg-white dark:bg-gray-900">
             <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-20 lg:px-6">
                 <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-                    <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Наш блог</h2>
+                    <h2 className="font-[lato] mb-4 text-3xl lg:text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">Наш блог</h2>
                     <p className="font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">Посты на мебельную тему и новости от нашей фабрики из первых рук.</p>
                 </div> 
                 <motion.main 

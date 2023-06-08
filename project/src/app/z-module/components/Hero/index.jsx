@@ -27,7 +27,7 @@ export default function Hero() {
                     alt="Your Company"
                   /> */}
                   <div className="mt-4 sm:mt-8 lg:mt-16">
-                    <a href="#" className="inline-flex space-x-6">
+                    <button  className="inline-flex space-x-6">
                       <span className="rounded-full bg-gray-500/10 px-3 py-1 text-xs sm:text-sm font-semibold leading-6 text-gray-900 ring-1 ring-inset ring-gray-600/10 ">
                         Фабрика мебели "ЗОВ"
                       </span>
@@ -35,9 +35,9 @@ export default function Hero() {
                         <span>Ваш промокод</span>
                         <ChevronRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                       </span>
-                    </a>
+                    </button>
                   </div>
-                  <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl font-[lato]">
+                  <h1 className="font-[lato] mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                     Мебель для жизни
                   </h1>
                   <p className="mt-6 text-sm md:text-lg leading-6 text-gray-600 ">

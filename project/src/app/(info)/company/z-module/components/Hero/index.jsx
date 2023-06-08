@@ -44,15 +44,15 @@ export default function Hero (){
           <div className="overflow-hidden">
             <div className="mx-auto max-w-7xl px-6 pb-16 pt-8 sm:pt-24 lg:px-8 lg:pt-12">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-                <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <div className="w-full max-w-2xl lg:shrink-0 xl:max-w-3xl">
+                  <h1 className="font-[lato] text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl ">
                     Мебель <br/>для вашей семьи
                   </h1>
                   {/* <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                     Мы официальный дилер фабрики "ЗОВ" <br/>в России
                   </h1> */}
-                  <p className="relative mt-6 text-base sm:text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Наша компания располагает самой крупной сетью мебельных салонов фабрики "ЗОВ" в России. Предлагаем Вам отличный сервис, доступные цены на мебель премиального класса, а также дружелюбное отношение нашего персонала &#128578;.
+                  <p className="relative mt-8 text-base sm:text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                    Наша компания располагает самой крупной сетью мебельных салонов фабрики "ЗОВ" в России. Предлагаем Вам отличный сервис, доступные цены на мебель премиального класса, а также дружелюбное отношение нашего персонала &#128578;
                   </p>
                   <p className="relative mt-6 text-base sm:text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                     Ждём Вас в наших салонах!

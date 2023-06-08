@@ -8,7 +8,7 @@ export default function Article({ param }) {
             <header className="py-12">
                 <div className="px-4 mx-auto w-full max-w-screen-xl text-center">
                     <span className="block mb-4 font-semibold text-gray-900 dark:text-white">Опубликовано <time className="font-normal text-gray-500 dark:text-gray-400 uppercase"   dateTime="2023-03-05" title="3 мая, 2023">3 мая, 2023</time></span>
-                    <h1 className="mx-auto mb-4 max-w-3xl text-2xl dark:text-white font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl">Как выбрать идеальный цвет фасадов, каркаса и столешницы для вашего кухонного гарнитура</h1>
+                    <h1 className="font-[lato] mx-auto mb-4 max-w-3xl text-2xl dark:text-white font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl">Как выбрать идеальный цвет фасадов, каркаса и столешницы для вашего кухонного гарнитура</h1>
                     <p className="text-lg font-normal text-gray-500 dark:text-gray-400">Мы рады поделиться с Вами своим опытом и помочь в выборе мебели нашей фабрики.</p>
                 </div>
             </header>
