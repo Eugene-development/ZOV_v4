@@ -169,7 +169,7 @@ export default function Footer() {
           <div>
             <h3 className="text-base font-semibold leading-6 text-white">Подписка</h3>
             <p className="mt-2 text-sm leading-6 text-gray-300">
-              Следите за нашими на новостями, акциями и специальными предложениями.
+              Следите за нашими новостями, акциями и специальными предложениями.
             </p>
           </div>
           <form className="mt-6 sm:flex sm:max-w-md lg:mt-0">
@@ -204,7 +204,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-            &copy; 1997-2023 Кухни "ЗОВ". Все права защищены.
+            &copy; 1997-2023 Фабрика "ЗОВ". Все права защищены.
           </p>
         </div>
       </div>
