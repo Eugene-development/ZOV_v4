@@ -101,7 +101,7 @@ export default function Consultation() {
                                 />
                               </div>
                             </div>
-                            <div>
+                            {/* <div>
                               <label
                                 htmlFor="address"
                                 className="block text-sm font-medium leading-6 text-gray-900"
@@ -116,13 +116,13 @@ export default function Consultation() {
                                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
                               </div>
-                            </div>
+                            </div> */}
                             <div>
                               <label
                                 htmlFor="email"
                                 className="block text-sm font-medium leading-6 text-gray-900"
                               >
-                                Почта (необязательно)
+                                Почта
                               </label>
                               <div className="mt-2">
                                 <input
@@ -132,6 +132,13 @@ export default function Consultation() {
                                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
                               </div>
+                            </div>
+                            <div>
+                              <label
+                                htmlFor="file"
+                                className="block text-sm mb-2 font-medium leading-6 text-gray-900"
+                              >Добавьте файлы <br className='md:hidden' /> (планировка, дизайн помещения и пр.)</label>
+                              <input type="file" id="file" name="files" multiple />
                             </div>
                             <div>
                               <label
@@ -150,51 +157,6 @@ export default function Consultation() {
                                 />
                               </div>
                             </div>
-                            <fieldset>
-                              <legend className="text-sm font-medium leading-6 text-gray-900">У вас есть готовый проект?</legend>
-                              <div className="mt-2 space-y-4">
-                                <div className="relative flex items-start">
-                                  <div className="absolute flex h-6 items-center">
-                                    <input
-                                      id="privacy-public"
-                                      name="privacy"
-                                      aria-describedby="privacy-public-description"
-                                      type="radio"
-                                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                                    />
-                                  </div>
-                                  <div className="pl-7 text-sm leading-6">
-                                    <label htmlFor="privacy-public" className="font-medium text-gray-900">
-                                      Да
-                                    </label>
-                                    {/* <p id="privacy-public-description" className="text-gray-500">
-                                      Everyone with the link will see this project.
-                                    </p> */}
-                                  </div>
-                                </div>
-                                <div>
-                                  <div className="relative flex items-start">
-                                    <div className="absolute flex h-6 items-center">
-                                      <input
-                                        id="privacy-private-to-project"
-                                        name="privacy"
-                                        aria-describedby="privacy-private-to-project-description"
-                                        type="radio"
-                                        className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                                      />
-                                    </div>
-                                    <div className="pl-7 text-sm leading-6">
-                                      <label htmlFor="privacy-private-to-project" className="font-medium text-gray-900">
-                                        Нет
-                                      </label>
-                                      {/* <p id="privacy-private-to-project-description" className="text-gray-500">
-                                        Only members of this project would be able to access.
-                                      </p> */}
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </fieldset>
                           </div>
                           <div className="pb-6 pt-4">
                             <div className="mt-4 flex text-sm">
@@ -203,7 +165,7 @@ export default function Consultation() {
                                   className="h-5 w-5 text-gray-400 group-hover:text-gray-500"
                                   aria-hidden="true"
                                 /> */}
-                                <span className="ml-2">Специалист даст вам общую консультацию по возможному размещению модулей мебели, выбору материалов и цвета. Выезд за пределы МКАД платный.</span>
+                                <span className="ml-2">Дизайнер составит проект в 3D-формате и озвучит ориентировочную цену.</span>
                               </p>
                             </div>
                           </div>
