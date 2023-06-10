@@ -16,7 +16,7 @@ const { openVisibleFormConsultation } = visibleFormConsultation();
                 <div className="max-w-screen-xl px-4 mx-auto ">
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                     {props.products.map(item => (
-                      <div className="relative overflow-hidden rounded-lg group">
+                      <div key={item.project} className="relative overflow-hidden rounded-lg group">
                         <img className="object-cover w-full h-[280px] scale-100 ease-in duration-300 group-hover:scale-125" src={item.img} alt="кухонный гарнитур"/>
                         <div className="absolute inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
                           {/* <div className="text-center"> */}
@@ -44,9 +44,9 @@ const { openVisibleFormConsultation } = visibleFormConsultation();
                         Записаться
                         <svg aria-hidden="true" className="w-5 h-5 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                           fill="currentColor">
-                          <path fill-rule="evenodd"
+                          <path fillRule="evenodd"
                             d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd" />
+                            clipRule="evenodd" />
                         </svg>
                       </button>
                     </div>

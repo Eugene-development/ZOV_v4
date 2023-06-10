@@ -7,6 +7,10 @@ export const metadata = {
 }
 
 const data = {
+  head: {
+    h1: 'Гардеробные комнаты',
+    description: 'Предлагаем различное наполнение и аксессуары для компактных и просторных помещений'
+  },
   products: [
     {
       project: "ШКАФ 1. BASIC LINE",
@@ -32,15 +36,13 @@ const data = {
       project: "ШКАФ 17. BASIC / SMART LINE",
       img: 'https://zovofficial.com/image/catalog/products/garderobnye-shkafy-i-sistemy/2023/garderob-17/cam-2.jpg'
     },
-]
-
+  ]
 }
 
-export default function Page() {
+export default () => {
   return (
     <>
-        <Head/>
-        {/* <Filter/> */}
+        <Head head={data.head}/>
         <ProductList products={data.products}/>
     </>
   )
