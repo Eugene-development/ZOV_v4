@@ -1,6 +1,6 @@
 import PostComponent from '@/UI/Post'
 
-export default ({ param }) =>{
+export default () =>{
   return (
     <PostComponent/>
   )
