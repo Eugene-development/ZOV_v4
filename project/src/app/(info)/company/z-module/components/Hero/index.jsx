@@ -46,7 +46,7 @@ export default function Hero (){
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-2xl lg:shrink-0 xl:max-w-3xl">
                   <h1 className="font-[lato] text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl ">
-                    Мебель <br/>для вашей семьи
+                    От нашей фабрики <br/>для вашей семьи
                   </h1>
                   {/* <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                     Мы официальный дилер фабрики "ЗОВ" <br/>в России
