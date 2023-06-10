@@ -9,10 +9,10 @@ const products = [
     project: "ОСК 1430",
     img: 'https://zovrus.ru/files/_cache/product/chr-0039_2.resize1200x1200w.jpg?33aaab5064285cbc42245ed8f7a2c20d'
   },
-  {
-    project: "МШ2474",
-    img: 'https://zovrus.ru/files/_cache/product/chr-1587.resize1200x1200w.jpg?0482d8eba3f49309f324bdf695b93932'
-  },
+  // {
+  //   project: "МШ 2474",
+  //   img: 'https://zovrus.ru/files/_cache/product/chr-1587.resize1200x1200w.jpg?0482d8eba3f49309f324bdf695b93932'
+  // },
   {
     project: "ТШ 3394",
     img: 'https://zovrus.ru/files/_cache/product/chr-0614.resize1200x1200w.jpg?b00cc4c680739004ce873abc05677f47'

@@ -18,9 +18,10 @@ const { openVisibleFormConsultation } = visibleFormConsultation();
                     {props.products.map(item => (
                       <div className="relative overflow-hidden rounded-lg group">
                         <img className="object-cover w-full h-[280px] scale-100 ease-in duration-300 group-hover:scale-125" src={item.img} alt="кухонный гарнитур"/>
-                        <div className="absolute inset-0 grid items-end justify-center p-4 bg-gradient-to-b from-transparent to-black/60">
-                          <div className="text-center">
-                            <p className="text-base font-medium text-gray-300">
+                        <div className="absolute inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
+                          {/* <div className="text-center"> */}
+                          <div className="text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
+                            <p className="text-base font-medium text-gray-50">
                               Проект: {item.project}
                             </p>
                           </div>

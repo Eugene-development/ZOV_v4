@@ -13,7 +13,7 @@ export default function Map() {
                   height="600"
                   title="map"
                   frameborder="0"
-                  class="mx-auto w-full"
+                  className="mx-auto w-full"
               />
           </div>
          </div>
