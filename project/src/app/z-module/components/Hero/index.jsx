@@ -37,7 +37,7 @@ export default function Hero() {
                       </span>
                     </button>
                   </div>
-                  <h1 className="font-[lato] mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  <h1 className="font-[lato] mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl antialiased">
                     Мебель для жизни
                   </h1>
                   <p className="mt-6 text-sm md:text-lg leading-6 text-gray-600 ">

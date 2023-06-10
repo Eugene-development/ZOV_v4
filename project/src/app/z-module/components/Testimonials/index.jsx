@@ -89,7 +89,7 @@ export default function Testimonials() {
     >
       <Container>
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-[lato] mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+          <h2 className="font-[lato] mb-4 text-3xl md:text-4xl  font-extrabold text-gray-900 dark:text-white">
             Отзывы <br className="md:hidden" /> о нашей работе
           </h2>
           <p className="mt-4 text-lg tracking-tight text-gray-700">
