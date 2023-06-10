@@ -19,6 +19,11 @@ const features = [
     description: 'Если вы приобретёте 5 позиций техники Kuppersberg, та что по меньшей цене будет вам в подарок.',
     icon: GiftIcon,
   },
+  {
+    name: 'Акриловые столешницы',
+    description: 'Выберите свой цвет столешницы из искустввенного камня из акционной серии по суперцене 20000 м/п.',
+    icon: GiftIcon,
+  },
 ]
 
 export default function Action() {
@@ -27,7 +32,7 @@ export default function Action() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-screen-sm text-center mb-4 lg:mb-8">
               <h2 className="font-[lato] mb-4 text-3xl lg:text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">Акции и подарки</h2>
-              <p className="font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">Мы стараемся Вас порадовать не только качественной и красивой мебелью, но и приятными бонусами при покупке!</p>
+              <p className="font-light text-gray-500 text-sm sm:text-lg dark:text-gray-400">Мы стараемся Вас радовать не только качественной и красивой мебелью, но и приятными бонусами при покупке!</p>
           </div> 
           <motion.main 
             initial={{ opacity: 0 }} 
@@ -53,7 +58,7 @@ export default function Action() {
               <img
                 src="https://art-holding.su/image/catalog/category/gifts2.jpg"
                 alt="Product screenshot"
-                className="w-[40rem] max-w-none  sm:w-[50rem]"
+                className="w-[40rem] max-w-none sm:w-[60rem] mx-auto"
                 width={2432}
                 height={1442}
               />

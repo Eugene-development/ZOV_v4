@@ -54,7 +54,7 @@ export default function ServiceList() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-screen-sm text-center mb-4 lg:mb-8">
                   <h2 className="font-[lato] mb-4 text-3xl lg:text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">Сервис компании</h2>
-                  <p className="font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">На всём пути нашего сотрудничества наши специалисты всегда готовы придти вам на помощь и решить любой вопрос.</p>
+                  <p className="font-light text-gray-500 text-sm sm:text-lg dark:text-gray-400">На всём пути нашего сотрудничества наши специалисты всегда готовы придти вам на помощь и решить любой вопрос.</p>
               </div> 
               <motion.main 
                 initial={{ opacity: 0 }} 
