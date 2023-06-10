@@ -21,7 +21,7 @@ const { openVisibleFormConsultation } = visibleFormConsultation();
                         <div className="absolute inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
                           {/* <div className="text-center"> */}
                           <div className="text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
-                            <p className="text-base font-medium text-gray-50">
+                            <p className="text-sm font-medium text-white">
                               Проект: {item.project}
                             </p>
                           </div>

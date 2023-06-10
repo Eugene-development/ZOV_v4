@@ -37,6 +37,10 @@ const products = [
     project: "ФМ 508",
     img: 'https://zovrus.ru/files/_cache/product/chr-6141_1.resize1200x1200w.jpg?aa00328a7800cf633311da54df405054'
   },
+  {
+    project: "БОКС 295",
+    img: 'https://zovrus.ru/files/_cache/product/chr-0623_1.resize1200x1200w.jpg?dff06047258116e7d693ea38c32be95a'
+  },
 ]
 
 export default function ProductList() {
