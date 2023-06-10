@@ -4,8 +4,8 @@ export default function Equipment() {
 <section className="bg-white dark:bg-gray-900 text-center">
   <div className="py-16 px-4 mx-auto max-w-screen-xl sm:py-32 lg:px-6">
       <div className="max-w-screen-md mx-auto mb-8 lg:mb-16">
-          <h2 className="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Комплектация мебели фабрики "ЗОВ"</h2>
-          <p className="font-light text-gray-500 dark:text-gray-400 sm:text-xl">Мы комплектуем всю мебель только качественными аксессуарами и фурнитурой в зависимости от ваших пожеланий и предпочтений.</p>
+          <h2 className="font-[lato] mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Комплектация мебели фабрики "ЗОВ"</h2>
+          <p className="font-light text-gray-500 dark:text-gray-400 sm:text-lg">Мы комплектуем всю мебель только качественными аксессуарами и фурнитурой в зависимости от ваших пожеланий и предпочтений.</p>
       </div>
       <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 xl:gap-12 md:space-y-0 text-left">
           <div>

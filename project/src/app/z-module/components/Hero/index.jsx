@@ -31,7 +31,7 @@ export default function Hero() {
                       <span className="rounded-full bg-gray-500/10 px-3 py-1 text-xs sm:text-sm font-semibold leading-6 text-gray-900 ring-1 ring-inset ring-gray-600/10 ">
                         Фабрика мебели "ЗОВ"
                       </span>
-                      <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6ЛЦ text-gray-600">
+                      <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
                         <span>Ваш промокод</span>
                         <ChevronRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                       </span>
