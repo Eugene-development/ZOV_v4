@@ -1,9 +1,10 @@
 "use client"
 import { motion } from "framer-motion"
-
+ 
 export default (props) => {
   return (
-    <motion.main initial={{ opacity:0 }} animate= {{ opacity:1 }}>
+    <>
+    <motion.main initial={{opacity:0}} animate= {{opacity:1}}>
         <main className="pb-16 lg:pb-24 bg-white dark:bg-gray-900">
 
             <header className="py-12">
@@ -17,7 +18,7 @@ export default (props) => {
             <div className="flex relative  justify-between px-4 mx-auto max-w-screen-xl bg-white dark:bg-gray-900 rounded">
                 <article className="xl:w-[828px] w-full max-w-none format format-sm sm:format-base lg:format-lg format-indigo dark:format-invert">
                     <div className="flex flex-col lg:flex-row justify-between lg:items-center py-6 border-t border-b border-gray-200 dark:border-gray-700">
-                        <span className="text-base mb-4 lg:mb-0 font-normal text-gray-500 dark:text-gray-400">От автора: <a href="#" rel="author" className="font-bold text-gray-900 dark:text-white no-underline hover:underline">Костров Евгений</a></span>
+                        <span className="text-base mb-4 lg:mb-0 font-normal text-gray-500 dark:text-gray-400">От автора: <a href="#" rel="author" className="font-bold text-gray-900 dark:text-white no-underline hover:underline">{props.data.author}</a></span>
                         <aside aria-label="Share social media">
                             {/* <a href="#"
                             className="inline-flex items-center py-2 px-6 mr-2 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><svg
@@ -44,27 +45,7 @@ export default (props) => {
                         </aside>
                     </div>
 
-                    <div className="my-8 text-gray-500 dark:text-gray-400 prose font-normal">
-                        <p>Ваша кухня - сердце вашего дома. Это место, где вы готовите пищу, проводите время с семьей и друзьями, и создаете незабываемые моменты. Когда дело доходит до выбора кухонного гарнитура, один из самых важных аспектов, которые нужно учесть, это цвет фасадов, каркаса и столешницы. Цветовая схема вашей кухни может создать атмосферу и визуальный образ, отражающий вашу уникальность и стиль. В этой статье мы рассмотрим несколько ключевых аспектов, которые помогут вам сделать правильный выбор цветов для вашего кухонного гарнитура.</p>
-                    <ol>
-                        <li>
-                            Учтите размеры и освещение помещения:
-                        </li>
-                        <p>При выборе цветов кухонного гарнитура важно учесть размеры помещения и его освещение. Светлые оттенки создают ощущение простора и света, что особенно полезно для небольших кухонь или тех, где нет естественного освещения. Если у вас просторная кухня с хорошим освещением, вы можете рассмотреть как светлые, так и темные оттенки, чтобы создать элегантный и стильный образ.</p>
-                        <li>Учитывайте свой стиль:</li>
-                        <p>Цвет гарнитура должен соответствовать вашему собственному стилю и предпочтениям. Если вы предпочитаете классический стиль, то теплые и нейтральные оттенки, такие как бежевый или коричневый, будут отличным выбором. Если вы склонны к современным трендам, вы можете рассмотреть более смелые и яркие цвета, такие как глубокий синий или смарагдово-зеленый.</p>
-                        <li>Рассмотрите общий дизайн интерьера:</li>
-                        <p>Важно принять во внимание общий дизайн интерьера вашего дома. Если у вас уже есть определенная цветовая палитра или дизайнерский стиль, вы можете выбрать цвета гарнитура, которые гармонично впишутся в общую концепцию. Например, если ваш интерьер в ярких цветах, то тональность самой мебели имеет смысл выбрать в спокойном пастельном варианте.</p>
-                        <li>Рассмотрите практичность и функциональность:</li>
-                        <p>Помимо эстетических аспектов, важно учесть практичность и функциональность выбранных цветов. Некоторые оттенки могут быть более подвержены пятнам и загрязнениям, особенно на фасадах кухонного гарнитура. В этом случае, выберите цвета, которые легко чистятся и не требуют особенного ухода. Кроме того, стоит учитывать, что темные оттенки могут создавать визуальный эффект уменьшения размеров помещения, поэтому в маленьких кухнях они могут быть не самым лучшим выбором.</p>
-                        <li>Сделайте акценты:</li>
-                        <p>Использование разных цветов для фасадов, каркаса и столешницы может помочь создать интересный визуальный контраст и добавить глубину в дизайн вашей кухни. Например, вы можете выбрать светлые фасады с темным каркасом или наоборот. Акцентные цвета также могут быть использованы на столешнице, чтобы создать уникальный фокус внимания. Обратите внимание на гармонию цветовых сочетаний и убедитесь, что акцентные цвета дополняют остальную палитру вашей кухни.</p>
-                        <li>Проявите творчество:</li>
-                        <p>Не бойтесь проявить свою творческую сторону и выбрать необычные цветовые решения для вашего кухонного гарнитура. В конце концов, ваша кухня - это ваше пространство для самовыражения. Рассмотрите использование разных оттенков одного цвета или смешение разных цветов для создания уникального и стильного образа. Вы можете играть с контрастами или использовать неожиданные комбинации цветов, чтобы придать вашей кухне особый характер и индивидуальность.</p>
-                        <p>В завершение, выбор цветов для фасадов, каркаса и столешницы вашего кухонного гарнитура - это важное решение, которое оказывает влияние на общий внешний вид и атмосферу вашей кухни. При выборе цветов учтите размеры и освещение помещения, свой собственный стиль, общий дизайн интерьера, практичность и функциональность, акценты и будущие тенденции. Не бойтесь быть творческими и экспериментировать с различными цветовыми сочетаниями.</p>
-                        <p>Помните, что выбранные цвета должны создавать гармонию, комфорт и отражать вашу индивидуальность. И не забывайте, что цветовые решения можно всегда обновить и изменить с течением времени. Главное - слушайте свой вкус и создавайте кухню, которая будет радовать вас и вашу семью на протяжении многих лет.</p>
-                    </ol>
-                    </div>
+                    <div className="my-8 text-gray-500 dark:text-gray-400 prose font-normal" dangerouslySetInnerHTML={{ __html: props.data.text }} />
 
 
 
@@ -98,13 +79,13 @@ export default (props) => {
 
 
 
-                    <section className="mt-8 not-format">
+                    {/* <section className="mt-8 not-format">
                         <div className="flex justify-between items-center mb-6">
                             <h2 className="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">Комментарии (20)</h2>
-                            {/* <div>
+                            <div>
                                 <button type="button"
                                     className="py-2 px-3 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Subscribe</button>
-                            </div> */}
+                            </div>
                         </div>
                         <form className="mb-6">
                             <div
@@ -416,7 +397,9 @@ export default (props) => {
                                 </button>
                             </div>
                         </article>
-                    </section>
+                    </section> */}
+
+<hr />
                 </article>
                 <aside className="hidden xl:block" aria-labelledby="sidebar-label">
                     <div className="xl:w-[336px] sticky top-24">
@@ -472,7 +455,7 @@ export default (props) => {
 
         </main>
 
-        <aside aria-label="Related articles" className="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
+        {/* <aside aria-label="Related articles" className="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
             <div className="px-4 mx-auto max-w-screen-xl">
                 <h2 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Читать далее</h2>
                 <article className="flex mb-8">
@@ -518,13 +501,13 @@ export default (props) => {
                     </div>
                 </article>
             </div>
-        </aside>
+        </aside> */}
 
         <section className="bg-white dark:bg-gray-900">
             <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <div className="mx-auto max-w-screen-md sm:text-center">
                     <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Подписаться на наши новости</h2>
-                    <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
+                    <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400"> Пришлите нам свой email и будьте в курсе наших новостей, акций и актуальной информации.</p>
                     <form action="#">
                         <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                             <div className="relative w-full">
@@ -544,5 +527,7 @@ export default (props) => {
             </div>
         </section>
     </motion.main>
+
+    </>
   )
 }
