@@ -1,4 +1,4 @@
-import ProductListComponent from "@/UI/ProductList"
+import ProductListComponent from "@/app/(production)/z-module/components/ProductList"
 
 const products = [
   {

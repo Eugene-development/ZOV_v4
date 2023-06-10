@@ -1,4 +1,4 @@
-import Article from "../z-module/components/Article"
+import Article from "../../z-module/components/Article"
 
 export const metadata = {
   title: 'Фабрика ЗОВ | Пост',

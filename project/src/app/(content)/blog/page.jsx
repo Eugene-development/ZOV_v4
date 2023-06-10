@@ -1,4 +1,4 @@
-import BlogList from "./z-module/components/BlogList"
+import BlogList from "../z-module/components/BlogList"
 
 export const metadata = {
   title: 'Фабрика ЗОВ | Блог',
