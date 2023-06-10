@@ -1,7 +1,12 @@
 import PostComponent from '@/UI/Post'
 
-export default () =>{
+const data = {
+    date: '01 июня 2023',
+    article: {}
+}
+
+export default () => {
   return (
-    <PostComponent/>
+    <PostComponent data={data}/>
   )
 }

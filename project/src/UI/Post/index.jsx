@@ -1,14 +1,14 @@
 "use client"
 import { motion } from "framer-motion"
 
-export default () => {
+export default (props) => {
   return (
-    <motion.main initial={{opacity:0}} animate= {{opacity:1}}>
+    <motion.main initial={{ opacity:0 }} animate= {{ opacity:1 }}>
         <main className="pb-16 lg:pb-24 bg-white dark:bg-gray-900">
 
             <header className="py-12">
                 <div className="px-4 mx-auto w-full max-w-screen-xl text-center">
-                    <span className="block mb-4 font-semibold text-gray-900 dark:text-white">Опубликовано <time className="font-normal text-gray-500 dark:text-gray-400 uppercase"   dateTime="2023-03-05" title="3 мая, 2023">3 мая, 2023</time></span>
+                    <span className="block mb-4 font-semibold text-gray-900 dark:text-white">Опубликовано <time className="font-normal text-gray-500 dark:text-gray-400 uppercase"   dateTime={props.data.date} title={props.data.date}>{props.data.date}</time></span>
                     <h1 className="font-[lato] mx-auto mb-4 max-w-3xl text-2xl dark:text-white font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl">Как выбрать идеальный цвет фасадов, каркаса и столешницы для вашего кухонного гарнитура</h1>
                     {/* <p className="text-lg font-normal text-gray-500 dark:text-gray-400">Мы рады поделиться с Вами своим опытом и помочь в выборе мебели нашей фабрики.</p> */}
                 </div>
