@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    customKey: "my-value",
+    customKey: "77",
+    apimail: "https://larux.ru:7721/",
   },
   images: {
     remotePatterns: [

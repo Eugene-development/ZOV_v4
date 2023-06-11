@@ -18,7 +18,6 @@ export default function Consultation() {
   const [email, setEmail] = useState('');
   const [comment, setComment] = useState('');
   const [project, setProject] = useState('');
-
 const handleSendFormConsultation = (e) => {
   // console.log(name, phone, email, comment, project)
         e.preventDefault();
