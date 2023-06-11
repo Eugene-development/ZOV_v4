@@ -11,20 +11,36 @@ const { visibleFormConsultation } = useStore
 
 export default function Consultation() {
   const { currentVisibleFormConsultation, closeVisibleFormConsultation } = visibleFormConsultation();
+
   const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [address, setAddress] = useState('');
+  const [email, setEmail] = useState('');
+  const [comment, setComment] = useState('');
+  const [project, setProject] = useState('');
 
 const handleSendFormConsultation = (e) => {
+  // console.log(name, phone, email, comment, project)
         e.preventDefault();
-        console.log(name);
 
         sendFormConsultation({
             variables: {
-            key,
-            is_active: true,
-            name,
+              key,
+              is_active: true,
+              name,
+              phone,
+              address,
+              email,
+              comment,
+              project
             },
         });
         setName('');
+        setPhone('');
+        setAddress('');
+        setEmail('');
+        setComment('');
+        setProject('');
       }
   return (
     
@@ -109,6 +125,7 @@ const handleSendFormConsultation = (e) => {
                               </label>
                               <div className="mt-2">
                                 <input
+                                onChange={(e) => setPhone(e.target.value)}
                                   type="text"
                                   name="phone"
                                   id="phone"
@@ -125,6 +142,7 @@ const handleSendFormConsultation = (e) => {
                               </label>
                               <div className="mt-2">
                                 <input
+                                  onChange={(e) => setAddress(e.target.value)}
                                   type="text"
                                   name="address"
                                   id="address"
@@ -141,6 +159,7 @@ const handleSendFormConsultation = (e) => {
                               </label>
                               <div className="mt-2">
                                 <input
+                                  onChange={(e) => setEmail(e.target.value)}
                                   type="text"
                                   name="email"
                                   id="email"
@@ -157,6 +176,7 @@ const handleSendFormConsultation = (e) => {
                               </label>
                               <div className="mt-2">
                                 <textarea
+                                  onChange={(e) => setComment(e.target.value)}
                                   id="description"
                                   name="description"
                                   rows={4}
@@ -171,6 +191,7 @@ const handleSendFormConsultation = (e) => {
                                 <div className="relative flex items-start">
                                   <div className="absolute flex h-6 items-center">
                                     <input
+                                      onChange={(e) => setProject(e.target.value)}
                                       id="privacy-public"
                                       name="privacy"
                                       aria-describedby="privacy-public-description"
@@ -213,7 +234,7 @@ const handleSendFormConsultation = (e) => {
                           </div>
                           <div className="pb-6 pt-4">
                             <div className="mt-4 flex text-sm">
-                              <p href="#" className="group inline-flex items-center text-gray-500 hover:text-gray-900">
+                              <p className="group inline-flex items-center text-gray-500 hover:text-gray-900">
                                 {/* <QuestionMarkCircleIcon
                                   className="h-5 w-5 text-gray-400 group-hover:text-gray-500"
                                   aria-hidden="true"

@@ -22,8 +22,8 @@ export default function RootLayout({
     <html lang="ru">
       <head>
         {/* <link rel="icon" href="../image/favicon.ico" sizes="any" /> */}
-        <script src="//code.jivosite.com/widget/szuh00HFi5" async></script>
-        <script
+          <script src="//code.jivosite.com/widget/szuh00HFi5" async></script>
+          <script
             dangerouslySetInnerHTML={{
               __html: `
                         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
