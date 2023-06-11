@@ -1,5 +1,6 @@
 "use client"
 import { Fragment, useState } from 'react'
+
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { LinkIcon, PlusIcon, QuestionMarkCircleIcon } from '@heroicons/react/20/solid'
@@ -10,8 +11,21 @@ const { visibleFormConsultation } = useStore
 
 export default function Consultation() {
   const { currentVisibleFormConsultation, closeVisibleFormConsultation } = visibleFormConsultation();
+  const [name, setName] = useState('');
 
+const handleSendFormConsultation = (e) => {
+        e.preventDefault();
+        console.log(name);
 
+        sendFormConsultation({
+            variables: {
+            key,
+            is_active: true,
+            name,
+            },
+        });
+        setName('');
+      }
   return (
     
     <Transition.Root show={currentVisibleFormConsultation} as={Fragment}>
@@ -42,7 +56,7 @@ export default function Consultation() {
                 leaveTo="translate-x-full opacity-0"
               >
                 <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
-                  <form className="flex h-full flex-col divide-y divide-gray-200 bg-white shadow-xl">
+                  <form onSubmit={handleSendFormConsultation} className="flex h-full flex-col divide-y divide-gray-200 bg-white shadow-xl">
                     <div className="h-0 flex-1 overflow-y-auto">
                       <div className="bg-indigo-800 px-4 py-6 sm:px-6">
                         <div className="flex items-center justify-between">
@@ -78,6 +92,7 @@ export default function Consultation() {
                               </label>
                               <div className="mt-2">
                                 <input
+                                  onChange={(e) => setName(e.target.value)}
                                   type="text"
                                   name="name"
                                   id="name"
