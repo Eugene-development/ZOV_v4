@@ -35,7 +35,7 @@ const ALL_CATALOG = gql`
 `;
 
 async function getCatalog () {
-    const url = 'https://gost-remont.com/graphql/'
+    const url = process.env.NEXT_PUBLIC_GRAPHQL
     const variables = {
 		key: "1",
         slug: "doska-obreznaya-obrabotannaya-251006000"

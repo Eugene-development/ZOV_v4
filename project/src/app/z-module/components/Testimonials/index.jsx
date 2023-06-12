@@ -92,7 +92,7 @@ export default function Testimonials() {
           <h2 className="font-[lato] mb-4 text-3xl md:text-4xl  font-extrabold text-gray-900 dark:text-white">
             Отзывы <br className="md:hidden" /> о нашей работе
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-gray-700">
+          <p className="mt-4 text-sm sm:text-lg tracking-tight text-gray-700">
             Однажды, возможно, мы разместим и ваш положительный отзыв о нашей компании. Мы будем очень стараться для этого.
           </p>
         </div>

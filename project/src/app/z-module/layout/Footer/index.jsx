@@ -204,8 +204,12 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-xs mx-auto leading-5  text-gray-400 md:order-1 md:mt-0">
-            &copy; 1997-2023 ООО "КУХНИ ЗОВ". Все права защищены.
+            &copy; 1997-2023 ООО "КУХНИ ЗОВ". Все права защищены. 
           </p>
+          {/* <p>{process.env.apiMail}</p><br/>
+          <p>{process.env.NEXT_PUBLIC_GRAPHQL_API}</p>
+          <p>{process.env.NEXT_PUBLIC_GRAPHQL_API}</p> */}
+          {/* <p>{process.env.NEXT_PUBLIC_GRAPHQL}</p> */}
         </div>
       </div>
     </footer>

@@ -4,10 +4,10 @@ export default function ExampleFurniture() {
   return (
     <>
       <div className="bg-gray-50">
-        <div className="mx-auto max-w-full py-16  sm:py-24 px-8 sm:px-16 lg:px-24 ">
+        <div className="mx-auto max-w-full py-16  sm:py-24 px-4 sm:px-16 lg:px-24 ">
           <div className=" mb-8 lg:mb-20 text-center">
               <h2 className="font-[lato] mb-4 text-3xl md:text-4xl tracking-normal font-extrabold text-gray-900 dark:text-white">Мебель <br className="md:hidden" /> для дома и офиса</h2>
-              <p className="font-light mx-auto max-w-3xl text-gray-500 dark:text-gray-400 sm:text-lg">Предлагаем корпусную и встраиваемую мебель трёх основных направлений: кухонные гарнитуры, гардеробные шкафы и шкафы купе.</p>
+              <p className="font-light mx-auto max-w-3xl text-gray-500 dark:text-gray-400 text-sm sm:text-lg">Предлагаем корпусную и встраиваемую мебель трёх основных направлений: кухонные гарнитуры, гардеробные шкафы и шкафы купе.</p>
           </div>
 
           <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">

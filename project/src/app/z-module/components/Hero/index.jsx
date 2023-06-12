@@ -26,21 +26,21 @@ export default function Hero() {
                     src="https://zovofficial.com/image/catalog/logo-rus-x2.png"
                     alt="Your Company"
                   /> */}
-                  <div className="mt-4 sm:mt-8 lg:mt-16">
+                  <div className="mt-2 sm:mt-8 lg:mt-16">
                     <button  className="inline-flex space-x-6">
                       <span className="rounded-full bg-gray-500/10 px-3 py-1 text-xs sm:text-sm font-semibold leading-6 text-gray-900 ring-1 ring-inset ring-gray-600/10 ">
                         Фабрика мебели "ЗОВ"
                       </span>
-                      <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
+                      <span className="pt-1 inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
                         <span>Ваш промокод</span>
                         <ChevronRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                       </span>
                     </button>
                   </div>
-                  <h1 className="font-[lato] mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl antialiased">
+                  <h1 className="font-[lato] mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl antialiased">
                     Мебель для жизни
                   </h1>
-                  <p className="mt-6 text-sm md:text-lg leading-6 text-gray-600 ">
+                  <p className="mt-4 text-xs md:text-lg leading-6 text-gray-600 ">
                     Фабрика "ЗОВ" - это один из крупнейших производителей кухонной и корпусной мебели как в Республике Беларусь, так и далеко за её пределами. {/* Наша крупнейшая в Москве и области дилерская сеть насчитывает 39 салонов, где вы можете ознакомиться с образцами и получить полную консультацию.  */}
                   </p>
                   <div className="mt-8 md:mt-24 flex items-center gap-x-6">
@@ -57,7 +57,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="mt-20 sm:mt-24 md:mx-auto md:max-w-3xl lg:mx-0 lg:mt-0 lg:w-screen">
+            <div className="mt-6 sm:mt-24 md:mx-auto md:max-w-3xl lg:mx-0 lg:mt-0 lg:w-screen">
               <div
                 className="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[300%] skew-x-[-30deg] bg-white shadow-xl shadow-gray-600/10 ring-1 ring-gray-50 md:-mr-20 lg:-mr-36"
                 aria-hidden="true"
@@ -68,7 +68,7 @@ export default function Hero() {
                     className="absolute -inset-y-px left-1/2 -z-10 ml-10 w-[200%] skew-x-[-30deg] bg-gray-100 opacity-20 ring-1 ring-inset ring-white md:ml-20 lg:ml-36"
                     aria-hidden="true"
                   />
-                  <div className="relative px-6 pt-8 sm:pt-8 md:pl-16 md:pr-0">
+                  <div className=" relative pt-0 sm:pt-8 md:pl-16 md:pr-0">
                     <Slider/>
                     <div
                       className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 md:rounded-3xl"
