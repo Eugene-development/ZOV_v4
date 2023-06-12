@@ -1,4 +1,6 @@
 "use client"
+import Link from "next/link"
+
 import CloseButton from './CloseButton';
 import { useStore } from '../../store'
 import {  PhoneIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
@@ -60,8 +62,8 @@ export default function Banner() {
             <span className="ml-1 text-sm text-gray-50">Москва</span>
           </div>
           <div className="flex md:hidden">
-            <EnvelopeIcon className="h-5 w-5 text-indigo-200" aria-hidden="true" />
-            <span className="ml-1 text-base text-gray-50">info@zov.top</span>
+            <EnvelopeIcon className="mt-0.5 h-5 w-5 text-indigo-100" aria-hidden="true" />
+            <span className="ml-2 text-base text-gray-50">info@zov.top</span>
           </div>
         </div>
 
@@ -76,8 +78,8 @@ export default function Banner() {
           <CloseButton/>
         </div>
         <div className="md:hidden flex justify-end">
-          <PhoneIcon className="h-5 w-5 text-indigo-200" aria-hidden="true" />
-          <span className="ml-1 text-base text-gray-50">8 (915) 400-00-20</span>
+          <PhoneIcon className="h-5 w-5 text-indigo-100" aria-hidden="true" />
+          <Link href="tel:+79154000020" className="ml-1 text-base text-gray-50">8 (915) 400-00-20</Link>
         </div>
       </div>
   )
