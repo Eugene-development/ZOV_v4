@@ -1,6 +1,8 @@
 "use client"
 import CloseButton from './CloseButton';
 import { useStore } from '../../store'
+import {  PhoneIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
+
 const { visibleBanner } = useStore
 
 export default function Banner() {
@@ -58,26 +60,8 @@ export default function Banner() {
             <span className="ml-1 text-sm text-gray-50">Москва</span>
           </div>
           <div className="flex md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-5 h-5 text-indigo-300"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-              />
-            </svg>
-            <span className="ml-1 text-base text-gray-50">8 (915) 400-00-20</span>
+            <EnvelopeIcon className="h-5 w-5 text-indigo-200" aria-hidden="true" />
+            <span className="ml-1 text-base text-gray-50">info@zov.top</span>
           </div>
         </div>
 
@@ -92,26 +76,8 @@ export default function Banner() {
           <CloseButton/>
         </div>
         <div className="md:hidden flex justify-end">
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-5 h-5 text-indigo-300"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-              />
-            </svg>
-            <span className="ml-1 text-base text-gray-50">info@zov.top</span>
+          <PhoneIcon className="h-5 w-5 text-indigo-200" aria-hidden="true" />
+          <span className="ml-1 text-base text-gray-50">8 (915) 400-00-20</span>
         </div>
       </div>
   )
