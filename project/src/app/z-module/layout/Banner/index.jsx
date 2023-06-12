@@ -35,7 +35,7 @@ export default function Banner() {
           </defs>
         </svg>
         <div className="flex flex-1 justify-start">
-          <div className="flex">
+          <div className="hidden md:flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
