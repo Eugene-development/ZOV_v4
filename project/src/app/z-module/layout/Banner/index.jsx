@@ -8,7 +8,7 @@ export default function Banner() {
 
   return (
     currentVisibleBanner && 
-      <div className="relative isolate flex items-center py-2.5 px-6 sm:px-3.5 bg-gray-900 justify-between">
+      <div className="relative isolate flex items-center py-2.5 px-4 sm:px-3.5 bg-gray-900 justify-between">
         <svg
           viewBox="0 0 577 310"
           aria-hidden="true"
@@ -57,7 +57,30 @@ export default function Banner() {
             </svg>
             <span className="ml-1 text-sm text-gray-50">Москва</span>
           </div>
+          <div className="flex md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-5 h-5 text-indigo-300"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+              />
+            </svg>
+            <span className="ml-1 text-base text-gray-50">8 (915) 400-00-20</span>
+          </div>
         </div>
+
         <p className="hidden md:block text-sm leading-6 text-gray-50">
             <strong className="font-semibold">У вас есть готовый проект?</strong>
             <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current text-indigo-300" aria-hidden="true">
@@ -65,8 +88,30 @@ export default function Banner() {
             </svg>
             Отправьте нам на просчёт &nbsp;<span aria-hidden="true" > <span className='text-indigo-300'>&rarr; &nbsp;</span> info@zov.top</span>
         </p>
-        <div className="flex flex-1 justify-end">
+        <div className="hidden md:flex flex-1 justify-end">
           <CloseButton/>
+        </div>
+        <div className="md:hidden flex justify-end">
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-5 h-5 text-indigo-300"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+              />
+            </svg>
+            <span className="ml-1 text-base text-gray-50">info@zov.top</span>
         </div>
       </div>
   )
