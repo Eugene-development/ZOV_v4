@@ -187,14 +187,6 @@ const showrooms = [
         link: '/'
     },
     {
-        city: 'Реутов',
-        address: 'ТРЦ ШОКОЛАД - МКАД, 2-Й КМ',
-        metro: 'Новокосино',
-        workingMode: '10.00-21.00',
-        img: 'https://zovrus.ru/files/_cache/salon/_mg_8433.crop596x380.jpg?76bb68d31f6af24cc8c53704cdb8b142',
-        link: '/'
-    },
-    {
         city: 'Химки',
         address: 'МОЛОДЁЖНАЯ УЛИЦА, 78',
         metro: '',
@@ -231,13 +223,13 @@ export default function Addresses() {
             <div className="px-4 md:px-20 py-8 mx-auto max-w-full">
                 <div className="grid gap-6 lg:gap-12 md:grid-cols-2 ">
                     {showrooms.map(item => (
-                        <div key={item.address} className="flex flex-col xl:flex-row mb-4 p-2 transition ease-in-out hover:scale-105 border-r border-gray-300 bg-gray-50 rounded-md shadow-lg">
+                        <div key={item.address} className="flex flex-col xl:flex-row mb-4 p-3 transition ease-in-out hover:scale-105 border-r border-gray-300 bg-gray-50 rounded-md shadow-lg">
                             <img src={item.img} className="md:mr-5  max-w-xs rounded-md object-fill h-52 w-96" alt="saloon" />
                             <div className="flex flex-col mt-2">
                                 <p className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                                     <span>г. {item.city},</span>
                                 </p>
-                                <p className="mb-2 text-sm font-bold leading-tight text-gray-900 dark:text-white uppercase">
+                                <p className="mb-2 text-sm font-bold leading-tight text-gray-900 dark:text-white ">
                                     <span>{item.address}</span>
                                 </p>
                                 <p className="my-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">Метро: "{item.metro}"</p>
