@@ -79,7 +79,7 @@ function QuoteIcon(props) {
   )
 }
 
-export default function Testimonials() {
+export default () => {
   return ( 
     <>
     <section

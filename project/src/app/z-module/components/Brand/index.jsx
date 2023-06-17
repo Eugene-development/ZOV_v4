@@ -15,7 +15,7 @@ const brands = [
     { name: 'GTV', logo: logoGTV }
 ];
 
-export default function Brand () {
+export default () => {
     return (
         <>
             <div className="mb-2 mx-2">

@@ -9,7 +9,7 @@ const { visibleFormProject, visibleFormConsultation } = useStore
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import Slider from './Slider'
 
-export default function Hero() {
+export default () => {
   const { openVisibleFormProject } = visibleFormProject();
   const { openVisibleFormConsultation } = visibleFormConsultation();
 

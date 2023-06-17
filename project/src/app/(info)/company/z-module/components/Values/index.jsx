@@ -31,7 +31,7 @@ const values = [
   },
 ]
 
-export default function Values() {
+export default () => {
   return (
     <div className="mx-auto mt-24 max-w-7xl px-6 sm:mt-32 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">

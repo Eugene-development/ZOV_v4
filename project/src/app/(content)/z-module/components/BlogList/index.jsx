@@ -17,7 +17,7 @@ const articles = [
 
 ];
 
-export default function BlogList() {
+export default () => {
   return (
         <section className="bg-white dark:bg-gray-900">
             <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-20 lg:px-6">

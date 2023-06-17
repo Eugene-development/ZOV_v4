@@ -1,5 +1,5 @@
 
-export default function Equipment() {
+export default () => {
   return (
 <section className="bg-white dark:bg-gray-900 text-center">
   <div className="py-16 px-4 mx-auto max-w-screen-xl sm:py-32 lg:px-6">

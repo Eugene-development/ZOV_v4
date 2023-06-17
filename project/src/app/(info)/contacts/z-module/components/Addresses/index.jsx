@@ -212,7 +212,7 @@ const showrooms = [
     },
 ]
 
-export default function Addresses() {
+export default () => {
   return (
     <motion.main 
       initial={{ opacity: 0 }} 

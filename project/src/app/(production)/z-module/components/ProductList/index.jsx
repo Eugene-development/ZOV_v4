@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { useStore } from "@/app/z-module/store"
 const { visibleFormConsultation } = useStore
 
-export default function index(props) {
+export default (props) => {
 const { openVisibleFormConsultation } = visibleFormConsultation();
 
   return (

@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 
-export default function Head(props) {
+export default (props) => {
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }} >
       <div className="bg-white py-8 sm:py-20">

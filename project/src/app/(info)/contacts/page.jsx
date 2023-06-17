@@ -7,7 +7,7 @@ export const metadata = {
   description: 'Адреса салонов и другая контактная информация',
 }
 
-export default function Page() {
+export default () => {
   return (
     <>
       <Head/>

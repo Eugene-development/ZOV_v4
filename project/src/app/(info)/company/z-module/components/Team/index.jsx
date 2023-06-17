@@ -74,7 +74,7 @@ const team = [
   // More people...
 ]
 
-export default function Team (){
+export default () =>{
     return (
         <div className="mx-auto my-32 max-w-7xl px-6 sm:my-64 lg:px-8">
           <div className="mx-auto max-w-3xl lg:mx-0">

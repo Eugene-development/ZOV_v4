@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 
-export default function Slider() {
+export default () => {
   return (
     <Carousel 
     showThumbs={false} 

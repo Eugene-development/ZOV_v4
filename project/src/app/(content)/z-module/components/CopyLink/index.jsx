@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function index () {
+export default () => {
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = async () => {

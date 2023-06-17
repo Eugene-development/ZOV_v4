@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function ExampleFurniture() {
+export default () => {
   return (
     <>
       <div className="bg-gray-50">

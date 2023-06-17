@@ -1,5 +1,5 @@
 
-export default function LatestArticles() {
+export default () => {
   return (
     <div className="p-4 mb-6 rounded-lg border border-gray-200 dark:border-gray-700">
         <h4 className="mb-4 text-sm font-bold text-gray-900 dark:text-white uppercase">Последнее</h4>

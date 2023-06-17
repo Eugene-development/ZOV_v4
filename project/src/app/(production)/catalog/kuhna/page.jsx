@@ -55,7 +55,7 @@ const data = {
   ]
 }
 
-export default function Page() {
+export default () => {
   return (
     <>
         <Head head={data.head}/>

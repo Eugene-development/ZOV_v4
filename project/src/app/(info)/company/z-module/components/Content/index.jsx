@@ -6,7 +6,7 @@ const stats = [
   { label: 'Поставщиков техники и фурнитуры', value: '12' },
 ]
 
-export default function Content() {
+export default () => {
   return (
         <div className="mx-auto mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:mt-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">

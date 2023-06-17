@@ -30,7 +30,7 @@ const data = {
   `,
 }
 
-export default function Page({ params }) {
+export default ({ params }) => {
   return (
     <>
         <Article param={params.id} data={data}/>

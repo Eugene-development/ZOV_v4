@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Статьи и посты на мебельную тематику',
 }
 
-export default function Page() {
+export default () => {
   return (
     <BlogList />
  )

@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 
-export default function Hero (){
+export default () =>{
     return(
       <motion.main initial={{opacity:0}} animate= {{opacity:1}}>
         <div className="relative isolate -z-10">

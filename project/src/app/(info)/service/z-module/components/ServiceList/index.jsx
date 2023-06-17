@@ -48,7 +48,7 @@ const services = [
   },
 ]
 
-export default function ServiceList() {
+export default () => {
   return (
       <div className="bg-white py-8 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

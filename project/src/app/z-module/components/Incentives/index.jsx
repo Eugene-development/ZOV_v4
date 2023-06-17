@@ -38,7 +38,7 @@ const perks = [
   },
 ]
 
-export default function Incentives() {
+export default () => {
   return (
     <div className="bg-gradient-to-b from-gray-50">
       <h2 className="sr-only">Our perks</h2>

@@ -2,7 +2,7 @@
 import { useStore } from "@/app/z-module/store"
 const { visibleFormConsultation } = useStore
 
-export default function Call() {
+export default () => {
   const { openVisibleFormConsultation } = visibleFormConsultation();
 
   return (

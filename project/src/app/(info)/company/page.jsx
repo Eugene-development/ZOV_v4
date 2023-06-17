@@ -10,7 +10,7 @@ export const metadata = {
   description: 'Информация о фабрике ЗОВ',
 }
 
-export default function Page() {
+export default () => {
   return (
       <div className="bg-white">
         <main className="isolate">

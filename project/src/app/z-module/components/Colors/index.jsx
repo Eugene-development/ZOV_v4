@@ -1,5 +1,5 @@
 
-export default function Colors() {
+export default () => {
   return (
     <section className="bg-white dark:bg-gray-900">
         <div className="pt-8 mx-auto max-w-full px-8 sm:px-16 lg:px-24 sm:text-center lg:pt-32 text-center">
