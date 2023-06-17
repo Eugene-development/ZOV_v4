@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function CopyButton() {
+export default function index () {
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = async () => {
@@ -40,5 +40,3 @@ function CopyButton() {
     </div>
   );
 }
-
-export default CopyButton;

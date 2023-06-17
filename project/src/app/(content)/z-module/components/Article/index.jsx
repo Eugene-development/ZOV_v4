@@ -1,6 +1,9 @@
 "use client"
 import { motion } from "framer-motion"
 import CopyLink from "../CopyLink"
+import Subscribe from "../Subscribe"
+import LatestArticles from "../LatestArticles"
+import Promo from "../Promo"
  
 export default (props) => {
   return (
@@ -10,8 +13,8 @@ export default (props) => {
 
             <header className="py-12">
                 <div className="px-4 mx-auto w-full max-w-screen-xl text-center">
-                    <span className="block mb-4 font-semibold text-gray-900 dark:text-white">Опубликовано {' '} <time className="font-normal text-gray-500 dark:text-gray-400"   dateTime={props.data.date} title={props.data.date}>{props.data.date}</time></span>
-                    <h1 className="font-[lato] mx-auto mb-4 max-w-3xl text-2xl dark:text-white font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl">Как выбрать идеальный цвет фасадов, каркаса и столешницы для вашего кухонного гарнитура</h1>
+                    <span className="block mb-4 font-semibold text-gray-900 dark:text-white">Опубликовано {' '} <time className="font-normal text-gray-500 dark:text-gray-400"  dateTime={props.data.date} title={props.data.date}>{props.data.date}</time></span>
+                    <h1 className="font-[lato] mx-auto mb-4 max-w-3xl text-2xl dark:text-white font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl">{props.data.title}</h1>
                     {/* <p className="text-lg font-normal text-gray-500 dark:text-gray-400">Мы рады поделиться с Вами своим опытом и помочь в выборе мебели нашей фабрики.</p> */}
                 </div>
             </header>
@@ -402,56 +405,14 @@ export default (props) => {
                         </article>
                     </section> */}
 
-<hr />
+                    <hr />
                 </article>
                 <aside className="hidden xl:block" aria-labelledby="sidebar-label">
                     <div className="xl:w-[336px] sticky top-24">
                         <h3 id="sidebar-label" className="sr-only">Sidebar</h3>
-                        <div className="p-4 mb-6 rounded-lg border border-gray-200 dark:border-gray-700">
-                            <h4 className="mb-2 text-sm font-bold text-gray-900 dark:text-white uppercase">Читайте нас</h4>
-                            <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">Следите за новыми статьями и постами о наших акциях и новостях</p>
-                            <form action="#">
-                                <label htmlFor="email-address-icon" className="sr-only">Ваша почта</label>
-                                <div className="relative mb-4">
-                                    <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                                        <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                                    </div>
-                                    <input required type="text" id="email-address-icon" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="name@email.ru"/>
-                                </div>
-                                <button type="submit" className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 text-center w-full">Подписаться</button> 
-                            </form>
-                        </div>
-                        <div className="p-4 mb-6 rounded-lg border border-gray-200 dark:border-gray-700">
-                            <h4 className="mb-4 text-sm font-bold text-gray-900 dark:text-white uppercase">Последнее</h4>
-                            <div className="mb-6">
-                                <h5 className="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">Сравнение с конкурентами</h5>
-                                <p className="mb-2 font-light text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                                <a href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                                    Подробнее
-                                </a>
-                            </div>
-                            <div className="mb-6">
-                                <h5 className="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">Мебельные трэнды 2023 года</h5>
-                                <p className="mb-2 font-light text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                                <a href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                                    Подробнее
-                                </a>
-                            </div>
-                            <div className="mb-6">
-                                <h5 className="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">Лучший дизайнер</h5>
-                                <p className="mb-2 font-light text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                                <a href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                        <div>   
-                            <div className="flex justify-center items-center mb-3 w-full h-48 bg-gray-100 rounded-lg dark:bg-gray-800">
-                                <svg aria-hidden="true" className="w-8 h-8 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd"></path></svg>
-                            </div>
-                            <p className="mb-2 text-sm font-light text-gray-500 dark:text-gray-400">Students and Teachers, save up to 60% on Flowbite Creative Cloud.</p>
-                            <p className="text-xs font-light text-gray-400 uppercase dark:text-gray-500">Ads placeholder</p>
-                        </div>
+                        <Subscribe/>
+                        <LatestArticles />
+                        <Promo/>
                     </div>
                 </aside>
             </div>
