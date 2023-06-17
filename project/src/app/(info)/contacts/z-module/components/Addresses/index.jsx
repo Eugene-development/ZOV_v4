@@ -231,10 +231,10 @@ export default function Addresses() {
             <div className="px-4 md:px-20 py-8 mx-auto max-w-full">
                 <div className="grid gap-6 lg:gap-12 md:grid-cols-2 ">
                     {showrooms.map(item => (
-                        <div key={item.address} className="flex flex-col xl:flex-row transition ease-in-out hover:scale-105 border-r">
-                                <img src={item.img} className="md:mr-5 max-w-xs rounded-md object-fill h-52 w-96" alt="saloon"></img>
+                        <div key={item.address} className="flex flex-col xl:flex-row mb-4 p-2 transition ease-in-out hover:scale-105 border-r border-gray-300 bg-gray-50 rounded-md shadow-lg">
+                            <img src={item.img} className="md:mr-5  max-w-xs rounded-md object-fill h-52 w-96" alt="saloon" />
                             <div className="flex flex-col mt-2">
-                                <p className="mb-2 text-2xl font-bold leading-tight text-gray-900 dark:text-white">
+                                <p className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                                     <span>г. {item.city},</span>
                                 </p>
                                 <p className="mb-2 text-sm font-bold leading-tight text-gray-900 dark:text-white uppercase">
