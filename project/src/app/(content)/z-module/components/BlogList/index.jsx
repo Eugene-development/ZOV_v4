@@ -24,6 +24,26 @@ const articles = [
         link: '/post/2',
         linkName: 'Link 2',
     },
+    {
+        topic: 'Пост',
+        date: '12-06-2023',
+        title: 'Плюсы и минусы конкуренции на мебельном рынке.',
+        preview: 'Мебельный рынок является одной из наиболее конкурентных ...',
+        author: 'Костров Евгений',
+        avatar: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png',
+        link: '/post/3',
+        linkName: 'Link 3',
+    },
+    {
+        topic: 'Пост',
+        date: '19-06-2023',
+        title: 'Роль дизайнеров при проектировании корпусной мебели.',
+        preview: 'Дизайнеры играют важную роль в процессе проектирования ...',
+        author: 'Костров Евгений',
+        avatar: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png',
+        link: '/post/4',
+        linkName: 'Link 4',
+    },
 
 ];
 
