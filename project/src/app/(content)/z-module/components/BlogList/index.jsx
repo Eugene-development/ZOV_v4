@@ -7,7 +7,7 @@ const articles = [
     {
         topic: 'Пост',
         date: '03-05-2023',
-        title: 'Как выбрать идеальный цвет фасадов, каркаса и столешницы для вашего кухонного гарнитура',
+        title: 'Как выбрать идеальный цвет вашего кухонного гарнитура.',
         preview: 'Ваша кухня - сердце вашего дома. Это место, где вы ...',
         author: 'Костров Евгений',
         avatar: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png',

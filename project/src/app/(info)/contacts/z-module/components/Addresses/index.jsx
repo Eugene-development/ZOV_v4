@@ -225,8 +225,8 @@ export default () => {
                     {showrooms.map(item => (
                         <div key={item.address} className="flex flex-col xl:flex-row mb-4 p-3 transition ease-in-out hover:scale-105 border-r border-gray-300 bg-gray-50 rounded-md shadow-lg">
                             <img src={item.img} className="md:mr-5  max-w-xs rounded-md object-fill h-52 w-96" alt="saloon" />
-                            <div className="flex flex-col mt-2">
-                                <p className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                            <div className="flex flex-col mt-4">
+                                <p className="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">
                                     <span>г. {item.city},</span>
                                 </p>
                                 <p className="mb-2 text-sm font-bold leading-tight text-gray-900 dark:text-white ">
@@ -234,6 +234,7 @@ export default () => {
                                 </p>
                                 <p className="my-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">Метро: "{item.metro}"</p>
                                 <p className="mb-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">Режим работы: {item.workingMode}</p>
+                                <p className="mb-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">Телефон: 8 (915) 400-00-20</p>
                             </div>
                         </div>
                     ))} 
