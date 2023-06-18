@@ -14,6 +14,16 @@ const articles = [
         link: '/post/1',
         linkName: 'Link 1',
     },
+    {
+        topic: 'Пост',
+        date: '04-06-2023',
+        title: 'Мебельные тренды 2023 года: слияние комфорта и функциональности.',
+        preview: 'В мире дизайна интерьера мебель является ключевым ...',
+        author: 'Костров Евгений',
+        avatar: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png',
+        link: '/post/2',
+        linkName: 'Link 2',
+    },
 
 ];
 
