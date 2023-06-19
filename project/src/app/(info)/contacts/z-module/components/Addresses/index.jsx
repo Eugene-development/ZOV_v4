@@ -223,7 +223,7 @@ export default () => {
             <div className="px-4 md:px-20 py-8 mx-auto max-w-full">
                 <div className="grid gap-6 lg:gap-12 md:grid-cols-2 ">
                     {showrooms.map(item => (
-                        <div key={item.address} className="flex flex-col xl:flex-row mb-4 p-3 transition ease-in-out hover:scale-105  border-gray-300 bg-gray-50 rounded-md shadow-lg">
+                        <div key={item.address} className="flex flex-col xl:flex-row mb-4 p-3 transition ease-in-out hover:scale-105  border-gray-300 bg-gradient-to-b from-gray-50 to-white rounded-md shadow-lg">
                             <img src={item.img} className="md:mr-5  max-w-xs rounded-md object-fill h-56 w-96" alt="saloon" />
                             <div className="flex flex-col mt-4">
                                 <p className="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">
