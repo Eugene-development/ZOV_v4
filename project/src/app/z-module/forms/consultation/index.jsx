@@ -17,30 +17,31 @@ export default function Consultation() {
   const [address, setAddress] = useState('');
   const [email, setEmail] = useState('');
   const [comment, setComment] = useState('');
-  const [project, setProject] = useState('');
-const handleSendFormConsultation = (e) => {
-  // console.log(name, phone, email, comment, project)
-        e.preventDefault();
+  const [project, setProject] = useState('Не выбрано');
 
-        sendFormConsultation({
-            variables: {
-              key,
-              is_active: true,
-              name,
-              phone,
-              address,
-              email,
-              comment,
-              project
-            },
-        });
-        setName('');
-        setPhone('');
-        setAddress('');
-        setEmail('');
-        setComment('');
-        setProject('');
-      }
+  const handleSendFormConsultation = (e) => {
+    console.log(name, phone, address, email, comment, project)
+          e.preventDefault();
+
+          // sendFormConsultation({
+          //     variables: {
+          //       key,
+          //       is_active: true,
+          //       name,
+          //       phone,
+          //       address,
+          //       email,
+          //       comment,
+          //       project
+          //     },
+          // });
+          setName('');
+          setPhone('');
+          setAddress('');
+          setEmail('');
+          setComment('');
+          setProject('');
+        }
   return (
     
     <Transition.Root show={currentVisibleFormConsultation} as={Fragment}>
@@ -187,12 +188,15 @@ const handleSendFormConsultation = (e) => {
                             <fieldset>
                               <legend className="text-sm font-medium leading-6 text-gray-900">У вас есть готовый проект?</legend>
                               <div className="mt-2 space-y-4">
+
                                 <div className="relative flex items-start">
                                   <div className="absolute flex h-6 items-center">
                                     <input
                                       onChange={(e) => setProject(e.target.value)}
                                       id="privacy-public"
-                                      name="privacy"
+                                      name="project"
+                                      value="да"
+                                      checked={project === 'да'}
                                       aria-describedby="privacy-public-description"
                                       type="radio"
                                       className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
@@ -207,12 +211,16 @@ const handleSendFormConsultation = (e) => {
                                     </p> */}
                                   </div>
                                 </div>
+
                                 <div>
                                   <div className="relative flex items-start">
                                     <div className="absolute flex h-6 items-center">
                                       <input
+                                        onChange={(e) => setProject(e.target.value)}
                                         id="privacy-private-to-project"
-                                        name="privacy"
+                                        name="project"
+                                        value="нет"
+                                        checked={project === 'нет'}
                                         aria-describedby="privacy-private-to-project-description"
                                         type="radio"
                                         className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
@@ -228,6 +236,7 @@ const handleSendFormConsultation = (e) => {
                                     </div>
                                   </div>
                                 </div>
+
                               </div>
                             </fieldset>
                           </div>
