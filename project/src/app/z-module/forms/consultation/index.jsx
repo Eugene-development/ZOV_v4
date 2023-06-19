@@ -1,4 +1,5 @@
 "use client"
+import axios from 'axios';
 import { Fragment, useState } from 'react'
 
 import { Dialog, Transition } from '@headlessui/react'
@@ -19,9 +20,22 @@ export default function Consultation() {
   const [comment, setComment] = useState('');
   const [project, setProject] = useState('Не выбрано');
 
+  const apiMAIL = {
+		// baseURL: 'http://localhost:7721/',
+		baseURL: 'https://larux.ru:7721/',
+
+		headers: {
+			Authorization: `Bearer 9`
+		}
+	};
+  const url = `/sendFormConsultationZOV`;
+
   const handleSendFormConsultation = (e) => {
-    console.log(name, phone, address, email, comment, project)
+    // console.log(name, phone, address, email, comment, project)
           e.preventDefault();
+
+          const data = { name, phone, address, email, comment, project };
+          axios.post(url, data, apiMAIL);
 
           // sendFormConsultation({
           //     variables: {
