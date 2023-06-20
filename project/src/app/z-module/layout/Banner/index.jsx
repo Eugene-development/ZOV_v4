@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import CloseButton from './CloseButton';
 import { useStore } from '../../store'
-import {  PhoneIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
+import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
 
 const { visibleBanner } = useStore
 

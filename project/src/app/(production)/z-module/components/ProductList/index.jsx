@@ -1,12 +1,16 @@
 "use client"
 import { motion } from "framer-motion"
-import { useStore } from "@/app/z-module/store"
 import ProductModal from "./ProductModal"
 
+import { useStore } from "@/app/z-module/store"
 const { visibleFormConsultation } = useStore
+
+import { useProductModal } from "../../store"
+const { visibleProductModal } = useProductModal
 
 export default (props) => {
 const { openVisibleFormConsultation } = visibleFormConsultation();
+const { openVisibleProductModal } = visibleProductModal();
 
   return (
         <motion.main 
@@ -18,9 +22,9 @@ const { openVisibleFormConsultation } = visibleFormConsultation();
                 <div className="max-w-screen-xl px-4 mx-auto ">
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                     {props.products.map(item => (
-<>
+<div key={item.project}>
                     <ProductModal item= {item}/>
-                      <div key={item.project} className="relative overflow-hidden rounded-lg group">
+                      <div onClick={openVisibleProductModal}  className="relative overflow-hidden rounded-lg group">
                         <img className="object-cover w-full h-[280px] scale-100 ease-in duration-300 group-hover:scale-125" src={item.img} alt="кухонный гарнитур"/>
                         <div className="absolute inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
                           {/* <div className="text-center"> */}
@@ -33,7 +37,7 @@ const { openVisibleFormConsultation } = visibleFormConsultation();
                       </div>
 
 
-</>
+</div>
                     ))}
                   </div>
                   <div className="max-w-full p-4 mx-auto my-8 rounded-md lg:my-20 bg-gray-50 dark:bg-gray-800">

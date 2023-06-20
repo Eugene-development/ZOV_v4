@@ -1,3 +1,13 @@
 import { create } from "zustand";
 
-export const useStore = {};
+const visibleProductModal = create((set) => ({
+  currentVisibleProductModal: false,
+  openVisibleProductModal: () =>
+    set(() => ({ currentVisibleProductModal: true })),
+  closeVisibleProductModal: () =>
+    set(() => ({ currentVisibleProductModal: false })),
+}));
+
+export const useProductModal = {
+  visibleProductModal,
+};
