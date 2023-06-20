@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 import { useStore } from "@/app/z-module/store"
 // import { useStore } from "@/app/stores/forms/store"
@@ -44,15 +45,15 @@ export default () => {
                     Фабрика "ЗОВ" - это один из крупнейших производителей кухонной и корпусной мебели как в Республике Беларусь, так и далеко за её пределами. {/* Наша крупнейшая в Москве и области дилерская сеть насчитывает 39 салонов, где вы можете ознакомиться с образцами и получить полную консультацию.  */}
                   </p>
                   <div className="mt-8 md:mt-24 flex items-center gap-x-6">
-                    {/* <button
-                      onClick={openVisibleFormProject}
+                    <button
+                      onClick={openVisibleFormConsultation}
                       className="rounded-md bg-gray-700 px-2.5 sm:px-4 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
                     >
-                      Заказать проект
-                    </button> */}
-                    <button onClick={openVisibleFormConsultation} className="text-xs sm:text-sm font-semibold leading-6 text-red-900">
-                      Консультация специалиста <span aria-hidden="true">→</span>
+                      Консультация специалиста
                     </button>
+                    <Link href="/contacts" className="text-xs sm:text-sm font-semibold leading-6 text-red-900">
+                      Наши салоны мебели <span aria-hidden="true">→</span>
+                    </Link>
                   </div>
                 </div>
               </div>
