@@ -1,6 +1,5 @@
 import Head from "@/app/(production)/z-module/components/Head"
 import ProductList from "@/app/(production)/z-module/components/ProductList"
-
 export const metadata = {
   title: 'Фабрика ЗОВ | Гардеробы',
   description: 'Гардеробы от фабрики ЗОВ',
