@@ -21,8 +21,8 @@ export default function Consultation() {
   const [project, setProject] = useState('Не выбрано');
 
   const apiMAIL = {
-		// baseURL: 'http://localhost:7721/',
-		baseURL: 'https://larux.ru:7721/',
+		baseURL: 'http://localhost:7721/',
+		// baseURL: 'https://larux.ru:7721/',
 
 		headers: {
 			Authorization: `Bearer 9`
@@ -31,24 +31,11 @@ export default function Consultation() {
   const url = `/sendFormConsultationZOV`;
 
   const handleSendFormConsultation = (e) => {
-    // console.log(name, phone, address, email, comment, project)
           e.preventDefault();
 
           const data = { name, phone, address, email, comment, project };
           axios.post(url, data, apiMAIL);
 
-          // sendFormConsultation({
-          //     variables: {
-          //       key,
-          //       is_active: true,
-          //       name,
-          //       phone,
-          //       address,
-          //       email,
-          //       comment,
-          //       project
-          //     },
-          // });
           setName('');
           setPhone('');
           setAddress('');
