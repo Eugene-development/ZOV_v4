@@ -21,6 +21,7 @@ export default function Consultation() {
   const [project, setProject] = useState('Не выбрано');
 
   const apiMAIL = {
+    
 		baseURL: 'http://localhost:7721/',
 		// baseURL: 'https://larux.ru:7721/',
 
@@ -30,11 +31,13 @@ export default function Consultation() {
 	};
   const url = `/sendFormConsultationZOV`;
 
-  const handleSendFormConsultation = (e) => {
+  const handleSendFormConsultation =  async (e) => {
+    'use server'
           e.preventDefault();
 
           const data = { name, phone, address, email, comment, project };
-          axios.post(url, data, apiMAIL);
+          
+          await axios.post(url, data, apiMAIL);
 
           setName('');
           setPhone('');
@@ -78,7 +81,7 @@ export default function Consultation() {
                       <div className="bg-indigo-800 px-4 py-6 sm:px-6">
                         <div className="flex items-center justify-between">
                           <Dialog.Title className="text-base font-semibold leading-6 text-white">
-                            Заявка на консультацию
+                            Заявка на консультацию...
                           </Dialog.Title>
                           <div className="ml-3 flex h-7 items-center">
                             <button
