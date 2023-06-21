@@ -1,5 +1,4 @@
 "use client"
-import axios from 'axios';
 import { Fragment, useState } from 'react'
 
 import { Dialog, Transition } from '@headlessui/react'
@@ -9,6 +8,8 @@ import { LinkIcon, PlusIcon, QuestionMarkCircleIcon } from '@heroicons/react/20/
 import { useStore } from "../../store"
 const { visibleFormConsultation } = useStore
 
+import { send } from '../sendFormConsultation/actions.js'
+// const {send, fff} = testF
 
 export default function Consultation() {
   const { currentVisibleFormConsultation, closeVisibleFormConsultation } = visibleFormConsultation();
@@ -20,24 +21,17 @@ export default function Consultation() {
   const [comment, setComment] = useState('');
   const [project, setProject] = useState('Не выбрано');
 
-  const apiMAIL = {
-    
-		baseURL: 'http://localhost:7721/',
-		// baseURL: 'https://larux.ru:7721/',
+  
 
-		headers: {
-			Authorization: `Bearer 9`
-		}
-	};
-  const url = `/sendFormConsultationZOV`;
-
-  const handleSendFormConsultation =  async (e) => {
-    'use server'
+  const handleSendFormConsultation =  (e) => {
           e.preventDefault();
-
-          const data = { name, phone, address, email, comment, project };
           
-          await axios.post(url, data, apiMAIL);
+
+          
+          const data = { name, phone, address, email, comment, project };
+           send(data)
+          // send(data)
+          // console.log(fff)
 
           setName('');
           setPhone('');
