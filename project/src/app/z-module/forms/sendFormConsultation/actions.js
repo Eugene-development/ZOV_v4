@@ -2,16 +2,14 @@
 import axios from "axios";
 
 const apiMAIL = {
-  baseURL: "http://localhost:7721/",
-  // baseURL: 'https://larux.ru:7721/',
+  baseURL: process.env.NEXT_PUBLIC_MAIL,
 
   headers: {
-    Authorization: `Bearer 9`,
+    Authorization: `Bearer ${process.env.NEXT_PUBLIC_KEY}`,
   },
 };
 const url = `/sendFormConsultationZOV`;
 
 export async function send(data) {
-  console.log(data);
   await axios.post(url, data, apiMAIL);
 }

@@ -9,7 +9,6 @@ import { useStore } from "../../store"
 const { visibleFormConsultation } = useStore
 
 import { send } from '../sendFormConsultation/actions.js'
-// const {send, fff} = testF
 
 export default function Consultation() {
   const { currentVisibleFormConsultation, closeVisibleFormConsultation } = visibleFormConsultation();
@@ -25,13 +24,9 @@ export default function Consultation() {
 
   const handleSendFormConsultation =  (e) => {
           e.preventDefault();
-          
-
-          
+                   
           const data = { name, phone, address, email, comment, project };
-           send(data)
-          // send(data)
-          // console.log(fff)
+          send(data)
 
           setName('');
           setPhone('');
