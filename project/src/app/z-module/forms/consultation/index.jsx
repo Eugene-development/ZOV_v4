@@ -8,7 +8,7 @@ import { LinkIcon, PlusIcon, QuestionMarkCircleIcon } from '@heroicons/react/20/
 import { useStore } from "../../store"
 const { visibleFormConsultation } = useStore
 
-import { send } from '../sendFormConsultation/actions.js'
+import { send } from '../../../../hooks/sendFormConsultation'
 
 export default function Consultation() {
   const { currentVisibleFormConsultation, closeVisibleFormConsultation } = visibleFormConsultation();
@@ -22,7 +22,7 @@ export default function Consultation() {
 
   
 
-  const handleSendFormConsultation =  (e) => {
+  const handleSendFormConsultation = (e) => {
           e.preventDefault();
                    
           const data = { name, phone, address, email, comment, project };

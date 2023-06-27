@@ -6,6 +6,8 @@ export const revalidate = 60;
 export const fetchCache = 'auto';
 export const runtime = 'nodejs';
 export const preferredRegion = 'auto';
+
+
 const ALL_CATALOG = gql`
 	query product ($slug: String!, $key: String!) {
 		product_one(slug: $slug, key: $key) {
@@ -34,14 +36,16 @@ const ALL_CATALOG = gql`
 	}
 `;
 
-async function getCatalog () {
+
+
+
+function getCatalog () {
     const url = process.env.NEXT_PUBLIC_GRAPHQL
     const variables = {
 		key: "1",
         slug: "doska-obreznaya-obrabotannaya-251006000"
 	};
-	const res = await request(url, ALL_CATALOG, variables);
-    return res;
+	return request(url, ALL_CATALOG, variables);
 }
 
 
@@ -58,3 +62,5 @@ const catalog = await getCatalog();
     </Suspense>
   )
 }
+
+
