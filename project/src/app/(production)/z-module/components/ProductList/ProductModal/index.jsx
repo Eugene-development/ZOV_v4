@@ -45,7 +45,7 @@ export default () => {
                   </div>
                   <div className="mt-3 text-center sm:mt-5">
                     <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                      {currentProduct.project}
+                      Проект - {currentProduct.project}
                     </Dialog.Title>
                     <div className="mt-2">
                       <p className="text-sm text-gray-500">
@@ -55,6 +55,9 @@ export default () => {
                     </div>
                   </div>
                 </div>
+
+                 <img className="my-8 object-cover w-full sm:h-[320px] lg:h-[480px] scale-100 ease-in duration-300 group-hover:scale-125 rounded-md" src={currentProduct.img} alt=""/>
+
                 <div className="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
                   <button
                     type="button"
