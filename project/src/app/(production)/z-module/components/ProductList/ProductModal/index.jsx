@@ -7,11 +7,10 @@ import { useProductModal } from "../../../store"
 const { visibleProductModal } = useProductModal
 
 
-export default (prop) => {
+export default () => {
 
   const cancelButtonRef = useRef(null)
-  const { currentVisibleProductModal, closeVisibleProductModal } = visibleProductModal()
-
+  const { currentVisibleProductModal, closeVisibleProductModal, currentProduct } = visibleProductModal()
 
   return (
     <Transition.Root show={currentVisibleProductModal} as={Fragment}>
@@ -34,7 +33,7 @@ export default (prop) => {
               as={Fragment}
               enter="ease-out duration-300"
               enterFrom="opacity-25 translate-y-4 sm:translate-y-0 sm:scale-95"
-              enterTo="opacity-75 translate-y-0 sm:scale-100"
+              enterTo=" translate-y-0 sm:scale-100"
               leave="ease-in duration-200"
               leaveFrom="opacity-75 translate-y-0 sm:scale-100"
               leaveTo="opacity-25 translate-y-4 sm:translate-y-0 sm:scale-95"
@@ -46,7 +45,7 @@ export default (prop) => {
                   </div>
                   <div className="mt-3 text-center sm:mt-5">
                     <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                      {prop.item.project}
+                      {currentProduct.project}
                     </Dialog.Title>
                     <div className="mt-2">
                       <p className="text-sm text-gray-500">

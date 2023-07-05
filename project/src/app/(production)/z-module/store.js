@@ -2,7 +2,9 @@ import { create } from "zustand";
 
 const visibleProductModal = create((set) => ({
   currentVisibleProductModal: false,
-  openVisibleProductModal: () => {
+  currentProduct: [],
+  openVisibleProductModal: (item) => {
+    set(() => ({ currentProduct: item }));
     set(() => ({ currentVisibleProductModal: true }));
   },
   closeVisibleProductModal: () =>

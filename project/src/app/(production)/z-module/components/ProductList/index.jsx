@@ -18,13 +18,14 @@ const { openVisibleProductModal } = visibleProductModal();
           animate={{ opacity: 2, y: -10 }} 
           transition={{ type: "spring", stiffness: 50 }}
         >
+          <ProductModal />
+
           <section className="bg-white dark:bg-gray-900 antialiased">
                 <div className="max-w-screen-xl px-4 mx-auto ">
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                     {props.products.map(item => (
-                      
-                      <div  key={item.project} className="relative overflow-hidden rounded-lg group">
-                        <img className="object-cover w-full h-[280px] scale-100 ease-in duration-300 group-hover:scale-125" src={item.img} alt="кухонный гарнитур"/>
+                      <div onClick={ () => openVisibleProductModal(item) } key={item.project} className="relative overflow-hidden rounded-lg group">
+                        <img className="object-cover w-full h-[280px] scale-100 ease-in duration-300 group-hover:scale-125" src={item.img} alt=""/>
                         <div className="absolute inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
                           {/* <div className="text-center"> */}
                           <div className="text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
@@ -34,6 +35,8 @@ const { openVisibleProductModal } = visibleProductModal();
                           </div>
                         </div>
                       </div>
+
+
 
 
                     ))}
