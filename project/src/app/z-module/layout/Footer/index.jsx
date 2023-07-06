@@ -7,11 +7,11 @@ const navigation = {
     { name: 'Шкафы купе', href: '/catalog/kupe' },
     { name: 'Распродажа мебели', href: '/catalog/rasprodazha' },
   ],
-  support: [
-    { name: 'Обратная связь', href: '#' },
-    { name: 'Рекламации', href: '#' },
-    { name: 'Гарантии', href: '#' },
-    { name: 'Обращение', href: '#' },
+  vacancy: [
+    { name: 'Замерщик помещений', href: '#' },
+    { name: 'Сборщик мебели', href: '#' },
+    { name: 'Дизайнер проектов', href: '#' },
+    { name: 'Водитель экспедитор', href: '#' },
   ],
   service: [
     { name: 'Консультация ', href: '#' },
@@ -137,9 +137,9 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
 
               <div className="mt-10 md:mt-0">
-                <h3 className="text-base font-semibold leading-6 text-white">Поддержка</h3>
+                <h3 className="text-base font-semibold leading-6 text-white">Вакансии</h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map((item) => (
+                  {navigation.vacancy.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
                         {item.name}

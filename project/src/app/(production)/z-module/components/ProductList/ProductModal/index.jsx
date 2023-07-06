@@ -6,11 +6,16 @@ import { CheckIcon } from '@heroicons/react/24/outline'
 import { useProductModal } from "../../../store"
 const { visibleProductModal } = useProductModal
 
+import { useStore } from "@/app/z-module/store"
+const { visibleFormConsultation } = useStore
+
 
 export default () => {
 
   const cancelButtonRef = useRef(null)
   const { currentVisibleProductModal, closeVisibleProductModal, currentProduct } = visibleProductModal()
+  const { openVisibleFormConsultation } = visibleFormConsultation();
+
 
   return (
     <Transition.Root show={currentVisibleProductModal} as={Fragment}>
@@ -61,7 +66,7 @@ export default () => {
                   <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:col-start-2"
-                    onClick={closeVisibleProductModal}
+                    onClick={openVisibleFormConsultation}
                   >
                     Получить консультацию
                   </button>
