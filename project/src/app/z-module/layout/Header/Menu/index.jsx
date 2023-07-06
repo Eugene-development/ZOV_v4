@@ -94,10 +94,10 @@ export default function Menu() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 -translate-y-1"
             >
-              <div className="absolute inset-x-0 top-0 -z-10 bg-gray-50 pt-14 shadow-lg ring-1 ring-gray-900/5">
-                <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8 ">
+              <div className="absolute inset-x-0 top-0 -z-10 bg-gray-50 pt-14 shadow-lg ring-1 ring-gray-900/5 border-t">
+                <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-6 lg:px-8 xl:gap-x-8 ">
                   {products.map((item) => (
-                    <div key={item.name} className="group relative rounded-lg p-6 text-sm leading-6 hover:bg-gray-50 border-l">
+                    <div key={item.name} className="group relative rounded-lg p-6 text-sm leading-6 hover:bg-gray-50 border-l ">
                       <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-red-700" aria-hidden="true" />
                       </div>

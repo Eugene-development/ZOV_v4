@@ -13,6 +13,7 @@ const data = {
   products: [
     {
       project: "ШКАФ 1. BASIC LINE",
+      description: "тестовое описание",
       img: 'https://zovofficial.com/image/catalog/products/garderobnye-shkafy-i-sistemy/garderobnyj-sh-kaf-1-basic-line-ru/garderobnyj-sh-kaf-1-basic-line-ru_49206.jpeg'
     },
     {

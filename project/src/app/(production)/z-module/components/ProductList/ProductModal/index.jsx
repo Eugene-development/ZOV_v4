@@ -49,8 +49,7 @@ export default () => {
                     </Dialog.Title>
                     <div className="mt-2">
                       <p className="text-sm text-gray-500">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aliquam laudantium explicabo
-                        pariatur iste dolorem animi vitae error totam. At sapiente aliquam accusamus facere veritatis.
+                        {currentProduct.description}
                       </p>
                     </div>
                   </div>
