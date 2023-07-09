@@ -4,14 +4,15 @@ import Link from "next/link"
 
 import { useStore } from "@/app/z-module/store"
 // import { useStore } from "@/app/stores/forms/store"
-const { visibleFormProject, visibleFormConsultation } = useStore
+const { visiblePromo, visibleFormConsultation } = useStore
 
 
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import Slider from './Slider'
 
 export default () => {
-  const { openVisibleFormProject } = visibleFormProject();
+
+  const { openVisiblePromo } = visiblePromo();
   const { openVisibleFormConsultation } = visibleFormConsultation();
 
   return (
@@ -28,15 +29,16 @@ export default () => {
                     alt="Your Company"
                   /> */}
                   <div className="mt-2 sm:mt-8 lg:mt-16">
-                    <button  className="inline-flex space-x-6">
+                    <div   className="inline-flex space-x-6">
                       <span className="rounded-full bg-gray-500/10 px-3 py-1 text-xs sm:text-sm font-semibold leading-6 text-gray-900 ring-1 ring-inset ring-gray-600/10 ">
                         Фабрика мебели "ЗОВ"
                       </span>
-                      <span className="pt-1 inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
+                      <button onClick={openVisiblePromo}
+                      className="pt-1 inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
                         <span>Ваш промокод</span>
                         <ChevronRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                      </span>
-                    </button>
+                      </button>
+                    </div>
                   </div>
                   <h1 className="font-[lato] mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl antialiased">
                     Мебель для жизни

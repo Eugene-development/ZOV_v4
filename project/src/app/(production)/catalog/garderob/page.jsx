@@ -13,23 +13,27 @@ const data = {
   products: [
     {
       project: "ШКАФ 1. BASIC LINE",
-      description: "тестовое описание",
+      description: "Гардеробный шкаф Basic Line – идеальное решение для организации хранения в вашей комнате. Этот стильный шкаф обладает простым и функциональным дизайном, позволяющим максимально использовать доступное пространство. Удобные полки и штанга позволят хранить вашу одежду и аксессуары в порядке.",
       img: 'https://zovofficial.com/image/catalog/products/garderobnye-shkafy-i-sistemy/garderobnyj-sh-kaf-1-basic-line-ru/garderobnyj-sh-kaf-1-basic-line-ru_49206.jpeg'
     },
     {
       project: "ШКАФ 7. SMART LINE",
+      description: "",
       img: 'https://zovofficial.com/image/catalog/products/garderobnye-shkafy-i-sistemy/garderobnyj-sh-kaf-liniya-smart-wl-elite-wl-ru/garderobnyj-sh-kaf-liniya-smart-wl-elite-wl-ru_49123.jpeg'
     },
     {
       project: "ШКАФ 3. BASIC LINE",
+      description: "",
       img: 'https://zovofficial.com/image/catalog/products/garderobnye-shkafy-i-sistemy/sh-kaf-liniya-basic-ru/sh-kaf-liniya-basic-ru_49110.jpeg'
     },
     {
       project: "ШКАФ 4. BASIC / SMART LINE",
+      description: "",
       img: 'https://zovofficial.com/image/catalog/products/garderobnye-shkafy-i-sistemy/garderobnyj-sh-kaf-1-basic-smart-line-ru/garderobnyj-sh-kaf-1-basic-smart-line-ru_49189.jpeg'
     },
     {
       project: "ШКАФ 18. BASIC / SMART LINE",
+      description: "",
       img: 'https://zovofficial.com/image/catalog/products/garderobnye-shkafy-i-sistemy/2023/garderob-18/1.jpg'
     },
     {

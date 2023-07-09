@@ -5,6 +5,13 @@ const visibleBanner = create((set) => ({
   changeVisibleBanner: () => set(() => ({ currentVisibleBanner: false })),
 }));
 
+const visiblePromo = create((set) => ({
+  currentVisiblePromo: false,
+  // openVisiblePromo: () => set(() => (console.log('visiblePromo')),
+  openVisiblePromo: () => set(() => ({ currentVisiblePromo: true })),
+  closeVisiblePromo: () => set(() => ({ currentVisiblePromo: false })),
+}));
+
 const visibleFormConsultation = create((set) => ({
   currentVisibleFormConsultation: false,
   openVisibleFormConsultation: () =>
@@ -23,6 +30,7 @@ const visibleFormProject = create((set) => ({
 
 export const useStore = {
   visibleBanner,
+  visiblePromo,
   visibleFormProject,
   visibleFormConsultation,
 };

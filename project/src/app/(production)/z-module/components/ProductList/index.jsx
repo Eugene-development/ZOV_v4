@@ -30,14 +30,11 @@ const { openVisibleProductModal } = visibleProductModal();
                           {/* <div className="text-center"> */}
                           <div className="text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
                             <p className="text-sm font-medium text-white">
-                              Проект: {item.project}
+                              {item.project}
                             </p>
                           </div>
                         </div>
                       </div>
-
-
-
 
                     ))}
                   </div>

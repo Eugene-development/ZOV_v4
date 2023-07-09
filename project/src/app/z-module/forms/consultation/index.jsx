@@ -91,7 +91,7 @@ export default function Consultation() {
                       </div>
                       <div className="flex flex-1 flex-col justify-between">
                         <div className="divide-y divide-gray-200 px-4 sm:px-6">
-                          <div className="space-y-6 pb-5 pt-6">
+                          <div className="space-y-4 pb-5 pt-6">
                             <div>
                               <label
                                 htmlFor="name"
@@ -126,7 +126,7 @@ export default function Consultation() {
                                 />
                               </div>
                             </div>
-                            <div>
+                            {/* <div>
                               <label
                                 htmlFor="address"
                                 className="block text-sm font-medium leading-6 text-gray-900"
@@ -142,7 +142,7 @@ export default function Consultation() {
                                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
                               </div>
-                            </div>
+                            </div> */}
                             <div>
                               <label
                                 htmlFor="email"
@@ -160,6 +160,23 @@ export default function Consultation() {
                                 />
                               </div>
                             </div>
+                            {/* <div>
+                              <label
+                                htmlFor="promo"
+                                className="block text-sm font-medium leading-6 text-gray-900"
+                              >
+                                Промокод
+                              </label>
+                              <div className="mt-2">
+                                <input
+                                  onChange={(e) => setPromo(e.target.value)}
+                                  type="text"
+                                  name="promo"
+                                  id="promo"
+                                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                />
+                              </div>
+                            </div> */}
                             <div>
                               <label
                                 htmlFor="description"
@@ -178,7 +195,7 @@ export default function Consultation() {
                                 />
                               </div>
                             </div>
-                            <fieldset>
+                            {/* <fieldset>
                               <legend className="text-sm font-medium leading-6 text-gray-900">У вас есть готовый проект?</legend>
                               <div className="mt-2 space-y-4">
 
@@ -199,9 +216,6 @@ export default function Consultation() {
                                     <label htmlFor="privacy-public" className="font-medium text-gray-900">
                                       Да
                                     </label>
-                                    {/* <p id="privacy-public-description" className="text-gray-500">
-                                      Everyone with the link will see this project.
-                                    </p> */}
                                   </div>
                                 </div>
 
@@ -223,15 +237,12 @@ export default function Consultation() {
                                       <label htmlFor="privacy-private-to-project" className="font-medium text-gray-900">
                                         Нет
                                       </label>
-                                      {/* <p id="privacy-private-to-project-description" className="text-gray-500">
-                                        Only members of this project would be able to access.
-                                      </p> */}
                                     </div>
                                   </div>
                                 </div>
 
                               </div>
-                            </fieldset>
+                            </fieldset> */}
                           </div>
                           <div className="pb-6 pt-4">
                             <div className="mt-4 flex text-sm">

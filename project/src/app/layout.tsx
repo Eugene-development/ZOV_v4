@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 
 // import FormProject from './z-module/forms/project'
 import FormConsultation from './z-module/forms/consultation'
+import Promo from './z-module/modal/promo'
 
 import Banner from "./z-module/layout/Banner";
 import Header from "./z-module/layout/Header";
@@ -45,6 +46,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {/* <FormProject/> */}
+        <Promo/>
         <FormConsultation/>
         <Banner/>
         <Header />
