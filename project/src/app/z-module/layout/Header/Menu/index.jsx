@@ -150,7 +150,7 @@ export default function Menu() {
           <div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
             <div className="bg-white flex rounded-lg px-2 xl:px-6 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
                 <PhoneIcon className="block h-4 w-4 xl:h-6 xl:w-6 text-gray-950 animate-pulse" aria-hidden="true" />
-                <Link href="tel:+79154000020" className=" ml-2 text-sm xl:text-lg font-bold text-gray-950"
+                <Link href="tel:+79154000020" className=" ml-2 text-sm xl:text-base font-bold text-gray-950"
                     >8 (915) 400-00-20
                 </Link>
             </div>

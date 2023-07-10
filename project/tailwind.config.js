@@ -22,6 +22,19 @@ module.exports = {
           900: "#1e3a8a",
         },
       },
+      animation: {
+        marquee: "marquee 100s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(calc(-100% - 2.5rem))",
+          },
+        },
+      },
     },
     fontFamily: {
       body: [

@@ -1,7 +1,7 @@
 
 export default () => {
   return (
-        <div className="relative isolate -z-10 my-20 sm:my-48">
+        <div className="relative isolate -z-10 my-20 sm:my-32">
           <div className="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
             <svg className="h-[40rem] w-[80rem] flex-none stroke-gray-200" aria-hidden="true">
               <defs>
@@ -24,8 +24,8 @@ export default () => {
             </svg>
           </div>
           <div className="my-8 mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="font-[lato] text-center text-2xl md:text-4xl font-semibold leading-8 text-gray-900">
-              Наши партнёры поставщики бытовой техники
+            <h2 className="font-[lato] text-center text-3xl md:text-5xl font-semibold leading-8 text-gray-900">
+              Комплектация бытовой техникой
             </h2>
             <div className="mx-auto mt-16 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-20 lg:mx-0 lg:max-w-full lg:grid-cols-5">
               <img
