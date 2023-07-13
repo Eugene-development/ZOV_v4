@@ -61,19 +61,19 @@ export default function Banner() {
             </svg>
             <span className="ml-1 text-sm text-gray-50">Москва</span>
           </div>
-          <div className="flex md:hidden">
+          <a href="mailto:info@zov.top" className="flex md:hidden">
             <EnvelopeIcon className="mt-0.5 h-5 w-5 text-indigo-100" aria-hidden="true" />
             <span className="ml-2 text-base text-gray-50">info@zov.top</span>
-          </div>
+          </a>
         </div>
 
-        <p className="hidden md:block text-sm leading-6 text-gray-50">
+        <a href="mailto:info@zov.top" className="hidden md:block text-sm leading-6 text-gray-50">
             <strong className="font-semibold">У вас есть готовый проект?</strong>
             <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current text-indigo-300" aria-hidden="true">
               <circle cx={1} cy={1} r={1} />
             </svg>
             Отправьте нам на просчёт &nbsp;<span aria-hidden="true" > <span className='text-indigo-300'>&rarr; &nbsp;</span> info@zov.top</span>
-        </p>
+        </a>
         <div className="hidden md:flex flex-1 justify-end">
           <CloseButton/>
         </div>
