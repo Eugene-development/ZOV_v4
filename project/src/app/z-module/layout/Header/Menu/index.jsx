@@ -98,8 +98,8 @@ export default function Menu() {
                 <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-6 lg:px-8 xl:gap-x-8 ">
                   {products.map((item) => (
                     <div key={item.name} className="group relative rounded-lg p-6 text-sm leading-6 hover:bg-gray-50 border-l ">
-                      <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-red-700" aria-hidden="true" />
+                      <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-gray-700">
+                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-gray-50" aria-hidden="true" />
                       </div>
                       <Link href={item.href} className="mt-6 block text-base font-semibold text-gray-800">
                         {item.name}
